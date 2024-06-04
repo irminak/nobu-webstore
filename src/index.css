@@ -4,6 +4,13 @@
 @import 'slick-carousel/slick/slick.css';
 @import 'slick-carousel/slick/slick-theme.css';
 
+@font-face {
+    font-family: 'Tan Meringue';
+    src: url('../public/fonts/TANMERINGUE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

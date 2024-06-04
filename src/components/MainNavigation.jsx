@@ -1,6 +1,6 @@
 // import { NavLink } from 'react-router-dom';
-import logo from '../assets/logo.png';
 import { FiMenu } from 'react-icons/fi';
+import { IoClose } from 'react-icons/io5';
 import { useState } from 'react';
 import DrawerMenu from './DrawerMenu';
 import { NavLink } from 'react-router-dom';
@@ -14,22 +14,20 @@ const MainNavigation = () => {
 
     return (
         <>
-            <section className='h-[70px] bg-white border-b-2  border-b-primary w-screen flex fixed items-center justify-between px-2 z-10'>
+            <section className='px-4 h-[70px] w-screen fixed flex items-center justify-between bg-[#ffffffee] z-10'>
                 <NavLink
                     to='/'
                     onClick={() => setMenuIsActive(false)}
                 >
-                    <img
-                        className='h-[60px]'
-                        src={logo}
-                        alt='logo'
-                    />
+                    <h1 className='relative top-1 font-tan text-font text-2xl'>
+                        NOBU
+                    </h1>
                 </NavLink>
                 <div
                     className='text-3xl text-font cursor-pointer'
                     onClick={() => setMenuIsActive(!menuIsActive)}
                 >
-                    <FiMenu />
+                    {menuIsActive ? <IoClose /> : <FiMenu />}
                 </div>
             </section>
             <DrawerMenu

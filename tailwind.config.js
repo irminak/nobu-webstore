@@ -16,6 +16,7 @@ export default {
         fontFamily: {
             roboto: ['Roboto', 'sans-serif'],
             futura: ['Futura PT', 'sans-serif'],
+            tan: ['Tan Meringue', 'sans-serif'],
         },
         extend: {
             backgroundImage: {
