@@ -4,11 +4,11 @@ import { NavLink } from 'react-router-dom';
 const DrawerMenu = ({ isOpen, toggleMenu }) => {
     return (
         <div
-            className={`fixed bg-white opacity-90 w-3/6 top-[70px] right-0 h-screen transform transition-transform duration-300 z-4 ${
+            className={`fixed bg-white opacity-90 w-4/6 top-[70px] right-0 h-screen transform transition-transform duration-300 z-10 ${
                 isOpen ? 'translate-x-0' : 'translate-x-full'
             }`}
         >
-            <ul className='uppercase list-none font-futura text-xl text-font py-4'>
+            <ul className='uppercase list-none font-futura text-xl text-font text-center'>
                 <li className='p-6 border-b-2 border-primary'>
                     <NavLink
                         onClick={() => toggleMenu(false)}
