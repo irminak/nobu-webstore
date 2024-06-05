@@ -1,20 +1,37 @@
-import { Link } from 'react-router-dom';
+import Badge from '../components/UI/Badge';
+import ProductCard from '../components/ProductCard';
+import { items, categories } from '../data/products';
 
 const ProductsPage = () => {
     return (
         <>
-            <h1>Products Page</h1>
-            <ul>
-                <li>
-                    <Link to='/products/'>Product 1</Link>
-                </li>
-                <li>
-                    <Link>Product 2</Link>
-                </li>
-                <li>
-                    <Link>Product 3</Link>
-                </li>
-            </ul>
+            <div className='pt-[70px]'>
+                <div className='p-4'>
+                    <div className='p-4 flex flex-wrap justify-between gap-4'>
+                        {categories.map((category) => (
+                            <Badge
+                                key={category}
+                                category={category}
+                            />
+                        ))}
+                    </div>
+                    <div className='pt-4 grid grid-cols-2 gap-x-2 gap-y-6'>
+                        {/* <ProductCard />
+                        <ProductCard />
+                        <ProductCard />
+                        <ProductCard />
+                        <ProductCard /> */}
+                        {items.map((item) => (
+                            <ProductCard
+                                key={item.id}
+                                img={item.img}
+                                name={item.name}
+                                price={item.price}
+                            />
+                        ))}
+                    </div>
+                </div>
+            </div>
         </>
     );
 };
