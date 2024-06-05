@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Tan Meringue';
-    src: url('../public/fonts/TANMERINGUE.ttf') format('truetype');
+    src: url('/fonts/TANMERINGUE.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

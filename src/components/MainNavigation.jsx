@@ -1,6 +1,6 @@
 // import { NavLink } from 'react-router-dom';
 import { FiMenu } from 'react-icons/fi';
-import { IoClose } from 'react-icons/io5';
+import { IoClose, IoCartOutline } from 'react-icons/io5';
 import { useState } from 'react';
 import DrawerMenu from './DrawerMenu';
 import { NavLink } from 'react-router-dom';
@@ -23,11 +23,19 @@ const MainNavigation = () => {
                         NOBU
                     </h1>
                 </NavLink>
-                <div
-                    className='text-3xl text-font cursor-pointer'
-                    onClick={() => setMenuIsActive(!menuIsActive)}
-                >
-                    {menuIsActive ? <IoClose /> : <FiMenu />}
+                <div className='flex gap-4 text-3xl text-font'>
+                    <div
+                        className='cursor-pointer'
+                        onClick={() => setMenuIsActive(!menuIsActive)}
+                    >
+                        {menuIsActive ? <IoClose /> : <FiMenu />}
+                    </div>
+                    <NavLink
+                        to='/cart'
+                        className='cursor-pointer'
+                    >
+                        <IoCartOutline />
+                    </NavLink>
                 </div>
             </section>
             <DrawerMenu

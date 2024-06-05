@@ -4,8 +4,8 @@ import InspirationCard from '../components/InspirationCard';
 
 const HomePage = () => {
     return (
-        <div className='pt-[70px] h-lvh'>
-            <section className='p-4 h-full flex flex-col flex-wrap gap-4'>
+        <div className='pt-[70px]'>
+            <section className='p-4 flex flex-col flex-wrap gap-4 '>
                 <NavLink
                     to='/inspirations'
                     className='w-full cursor-pointer'
@@ -31,7 +31,7 @@ const HomePage = () => {
                 </NavLink>
             </section>
             <Choices />
-            <section className='p-4 flex flex-wrap gap-6'>
+            <section className='px-4 py-8 flex flex-wrap gap-6'>
                 <InspirationCard
                     shape='aspect-square'
                     text='Smell the luxury'
@@ -60,7 +60,7 @@ const HomePage = () => {
                     shape='h-[400px]'
                     text='Skincare'
                     bg='bg-skin'
-                    position='items-start'
+                    position='items-end'
                 />
             </section>
         </div>

@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { CartContextProvider } from './store/CartContext.jsx';
+
 import HomePage from './pages/Home.jsx';
 import ProductsPage from './pages/Products.jsx';
 import RootLayout from './pages/Root.jsx';
 import ErrorPage from './pages/Error.jsx';
 import ProductDetailPage from './pages/ProductDetail.jsx';
-
-import { createTheme, colors, ThemeProvider } from '@mui/material';
 import InspirationsPage from './pages/Inspirations.jsx';
 import CartPage from './pages/Cart.jsx';
 
@@ -25,19 +25,11 @@ const router = createBrowserRouter([
     },
 ]);
 
-const theme = createTheme({
-    palette: {
-        secondary: {
-            main: colors.teal[800],
-        },
-    },
-});
-
 function App() {
     return (
-        <ThemeProvider theme={theme}>
+        <CartContextProvider>
             <RouterProvider router={router} />
-        </ThemeProvider>
+        </CartContextProvider>
     );
 }
 
