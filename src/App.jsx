@@ -9,6 +9,7 @@ import ErrorPage from './pages/Error.jsx';
 import ProductDetailPage from './pages/ProductDetail.jsx';
 import InspirationsPage from './pages/Inspirations.jsx';
 import CartPage from './pages/Cart.jsx';
+import CategoryPage from './pages/Category.jsx';
 
 const router = createBrowserRouter([
     {
@@ -18,7 +19,11 @@ const router = createBrowserRouter([
         children: [
             { path: '/', element: <HomePage /> },
             { path: '/products', element: <ProductsPage /> },
-            { path: '/products/:productId', element: <ProductDetailPage /> },
+            { path: '/products/:category', element: <CategoryPage /> },
+            {
+                path: '/products/:category/:productId',
+                element: <ProductDetailPage />,
+            },
             { path: '/inspirations', element: <InspirationsPage /> },
             { path: '/cart', element: <CartPage /> },
         ],

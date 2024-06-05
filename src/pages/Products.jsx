@@ -16,11 +16,6 @@ const ProductsPage = () => {
                         ))}
                     </div>
                     <div className='pt-4 grid grid-cols-2 gap-x-2 gap-y-6'>
-                        {/* <ProductCard />
-                        <ProductCard />
-                        <ProductCard />
-                        <ProductCard />
-                        <ProductCard /> */}
                         {items.map((item) => (
                             <ProductCard
                                 key={item.id}

@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const InspirationCard = ({ shape, text, link, bg, position }) => {
+const InspirationCard = ({ shape, text, category, bg, position }) => {
     return (
-        <NavLink
-            to={link}
+        <Link
+            to={`/products/${category}`}
             className='w-full cursor-pointer'
         >
             <div
@@ -18,7 +18,7 @@ const InspirationCard = ({ shape, text, link, bg, position }) => {
                     </h2>
                 </div>
             </div>
-        </NavLink>
+        </Link>
     );
 };
 
