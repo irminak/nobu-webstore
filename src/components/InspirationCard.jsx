@@ -1,14 +1,19 @@
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
+import { backgroundImages } from '../data/headers';
 
-const InspirationCard = ({ shape, text, category, bg, position }) => {
+const InspirationCard = ({ shape, text, category, bg, position, color }) => {
+    const backgroundImage = backgroundImages[bg] || null;
     return (
         <Link
             to={`/products/${category}`}
             className='w-full cursor-pointer'
         >
             <div
-                className={`bg-no-repeat bg-cover bg-center rounded-xl ${shape} ${bg}`}
+                className={`bg-no-repeat bg-cover bg-center rounded-xl ${shape} ${
+                    !backgroundImage && `bg-${color}`
+                }`}
+                style={backgroundImage ? { backgroundImage } : {}}
             >
                 <div
                     className={`p-4 w-full flex rounded-xl bg-[#2e2e2e30] ${shape} ${position}`}

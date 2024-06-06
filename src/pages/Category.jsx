@@ -13,7 +13,7 @@ const CategoryPage = () => {
                 <InspirationCard
                     shape='h-[160px]'
                     text={category}
-                    bg='bg-skin'
+                    bg={category}
                     position='items-end'
                     category={category}
                 />

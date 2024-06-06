@@ -35,35 +35,35 @@ const HomePage = () => {
                 <InspirationCard
                     shape='aspect-square'
                     text='Smell the luxury'
-                    bg='bg-candles'
+                    bg='candles'
                     position='items-start'
                     category='candles'
                 />
                 <InspirationCard
                     shape='h-[200px]'
                     text='Shine'
-                    bg='bg-lamps'
+                    bg='lamps'
                     position='items-end'
                     category='lamps'
                 />
                 <InspirationCard
                     shape='aspect-square'
                     text='Make yourself home'
-                    bg='bg-furniture'
+                    bg='furniture'
                     position='items-end'
                     category='furniture'
                 />
                 <InspirationCard
                     shape='h-[200px]'
                     text='Other categories'
-                    bg='bg-primary'
+                    color='primary'
                     position='items-center'
                     category=''
                 />
                 <InspirationCard
                     shape='h-[400px]'
                     text='Skincare'
-                    bg='bg-skin'
+                    bg='skin'
                     position='items-end'
                     category='cosmetics'
                 />
