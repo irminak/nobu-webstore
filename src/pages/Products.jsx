@@ -19,9 +19,11 @@ const ProductsPage = () => {
                         {items.map((item) => (
                             <ProductCard
                                 key={item.id}
+                                id={item.id}
                                 img={item.img}
                                 name={item.name}
                                 price={item.price}
+                                category={item.category}
                             />
                         ))}
                     </div>

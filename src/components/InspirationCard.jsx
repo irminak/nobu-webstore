@@ -4,9 +4,11 @@ import { backgroundImages } from '../data/headers';
 
 const InspirationCard = ({ shape, text, category, bg, position, color }) => {
     const backgroundImage = backgroundImages[bg] || null;
+    const linkPath = category ? `/products/category/${category}` : '/products';
+
     return (
         <Link
-            to={`/products/${category}`}
+            to={linkPath}
             className='w-full cursor-pointer'
         >
             <div

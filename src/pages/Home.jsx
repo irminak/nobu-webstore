@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
-import Choices from '../components/Choices';
 import InspirationCard from '../components/InspirationCard';
+import TopItems from '../components/TopItems';
 
 const HomePage = () => {
     return (
@@ -30,7 +30,7 @@ const HomePage = () => {
                     </p>
                 </NavLink>
             </section>
-            <Choices />
+            <TopItems />
             <section className='px-4 py-8 flex flex-wrap gap-6'>
                 <InspirationCard
                     shape='aspect-square'
@@ -63,7 +63,7 @@ const HomePage = () => {
                 <InspirationCard
                     shape='h-[400px]'
                     text='Skincare'
-                    bg='skin'
+                    bg='cosmetics'
                     position='items-end'
                     category='cosmetics'
                 />

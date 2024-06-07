@@ -10,9 +10,17 @@ export const items = [
         price: 299.99,
         description:
             'A sturdy wooden dining table that seats six people comfortably.',
+        highlights: [
+            'Hand cut and sewn locally',
+            'Dyed with our proprietary colors',
+            'Pre-washed & pre-shrunk',
+            'Ultra-soft 100% cotton',
+        ],
         material: 'Oak Wood',
         instructions: 'Wipe with a dry cloth to clean.',
         img: 'https://i.postimg.cc/3Jryv8k3/temp-Image510-Gw-P.avif',
+        rate: 3,
+        totalCount: 117,
     },
     {
         id: 2,
@@ -25,6 +33,14 @@ export const items = [
         material: 'Genuine Leather',
         instructions: 'Use leather conditioner monthly.',
         img: 'https://i.postimg.cc/59SYyYNP/temp-Image6x-NB0-S.avif',
+        rate: 4,
+        totalCount: 117,
+        highlights: [
+            'Hand cut and sewn locally',
+            'Dyed with our proprietary colors',
+            'Pre-washed & pre-shrunk',
+            'Ultra-soft 100% cotton',
+        ],
     },
     {
         id: 3,
@@ -37,6 +53,14 @@ export const items = [
         material: 'MDF',
         instructions: 'Assemble using the included hardware and instructions.',
         img: 'https://i.postimg.cc/8c4j0308/temp-Image9s-DAFb.avif',
+        rate: 5,
+        totalCount: 117,
+        highlights: [
+            'Hand cut and sewn locally',
+            'Dyed with our proprietary colors',
+            'Pre-washed & pre-shrunk',
+            'Ultra-soft 100% cotton',
+        ],
     },
     {
         id: 4,
@@ -49,6 +73,14 @@ export const items = [
         material: 'Metal',
         instructions: 'Replace the bulb with a 60W max LED bulb.',
         img: 'https://i.postimg.cc/9QKzKyJf/temp-Image0-Kc-KJn.avif',
+        rate: 3,
+        totalCount: 117,
+        highlights: [
+            'Hand cut and sewn locally',
+            'Dyed with our proprietary colors',
+            'Pre-washed & pre-shrunk',
+            'Ultra-soft 100% cotton',
+        ],
     },
     {
         id: 5,
@@ -61,6 +93,14 @@ export const items = [
         material: 'Metal and Fabric',
         instructions: 'Clean the shade with a damp cloth.',
         img: 'https://i.postimg.cc/LsPhphb3/temp-Image-DW2ac-Y.avif',
+        rate: 4,
+        totalCount: 117,
+        highlights: [
+            'Hand cut and sewn locally',
+            'Dyed with our proprietary colors',
+            'Pre-washed & pre-shrunk',
+            'Ultra-soft 100% cotton',
+        ],
     },
     {
         id: 6,
@@ -73,6 +113,14 @@ export const items = [
         material: 'Metal',
         instructions: 'Install by a qualified electrician.',
         img: 'https://i.postimg.cc/13ffvv0T/temp-Image-FBp-DJH.avif',
+        rate: 5,
+        totalCount: 117,
+        highlights: [
+            'Hand cut and sewn locally',
+            'Dyed with our proprietary colors',
+            'Pre-washed & pre-shrunk',
+            'Ultra-soft 100% cotton',
+        ],
     },
 
     {
@@ -86,6 +134,14 @@ export const items = [
         material: 'Soy Wax',
         instructions: 'Trim wick to 1/4 inch before lighting.',
         img: 'https://i.postimg.cc/13k5Js3n/temp-Image20-Qna9.avif',
+        rate: 3,
+        totalCount: 117,
+        highlights: [
+            'Hand cut and sewn locally',
+            'Dyed with our proprietary colors',
+            'Pre-washed & pre-shrunk',
+            'Ultra-soft 100% cotton',
+        ],
     },
     {
         id: 8,
@@ -98,6 +154,14 @@ export const items = [
         material: 'Paraffin Wax',
         instructions: 'Do not leave unattended.',
         img: 'https://i.postimg.cc/sXyfCmS3/temp-Imagegy-MHT4.avif',
+        rate: 4,
+        totalCount: 117,
+        highlights: [
+            'Hand cut and sewn locally',
+            'Dyed with our proprietary colors',
+            'Pre-washed & pre-shrunk',
+            'Ultra-soft 100% cotton',
+        ],
     },
     {
         id: 9,
@@ -110,6 +174,14 @@ export const items = [
         material: 'Beeswax',
         instructions: 'Use in a suitable tea light holder.',
         img: 'https://i.postimg.cc/W1F1GhTc/temp-Imageoqs-Gcr.avif',
+        rate: 5,
+        totalCount: 117,
+        highlights: [
+            'Hand cut and sewn locally',
+            'Dyed with our proprietary colors',
+            'Pre-washed & pre-shrunk',
+            'Ultra-soft 100% cotton',
+        ],
     },
 
     {
@@ -122,6 +194,14 @@ export const items = [
         ingredients: 'Aloe Vera, Vitamin E, Jojoba Oil',
         instructions: 'Apply daily to clean skin.',
         img: 'https://i.postimg.cc/NM7MKSYy/temp-Image5-VDz2-T.avif',
+        rate: 3,
+        totalCount: 117,
+        highlights: [
+            'Hand cut and sewn locally',
+            'Dyed with our proprietary colors',
+            'Pre-washed & pre-shrunk',
+            'Ultra-soft 100% cotton',
+        ],
     },
     {
         id: 11,
@@ -134,6 +214,14 @@ export const items = [
         ingredients: 'Beeswax, Castor Oil, Pigment',
         instructions: 'Apply to lips as desired.',
         img: 'https://i.postimg.cc/pX1d5DNB/temp-Image-K3sh8-S.avif',
+        rate: 4,
+        totalCount: 117,
+        highlights: [
+            'Hand cut and sewn locally',
+            'Dyed with our proprietary colors',
+            'Pre-washed & pre-shrunk',
+            'Ultra-soft 100% cotton',
+        ],
     },
     {
         id: 12,
@@ -145,5 +233,13 @@ export const items = [
         ingredients: 'Argan Oil, Keratin, Panthenol',
         instructions: 'Apply to wet hair, lather, and rinse.',
         img: 'https://i.postimg.cc/jqc2KpZm/temp-Imagern-GL8a.avif',
+        rate: 5,
+        totalCount: 117,
+        highlights: [
+            'Hand cut and sewn locally',
+            'Dyed with our proprietary colors',
+            'Pre-washed & pre-shrunk',
+            'Ultra-soft 100% cotton',
+        ],
     },
 ];

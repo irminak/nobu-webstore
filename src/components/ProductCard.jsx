@@ -1,11 +1,13 @@
-import { NavLink } from 'react-router-dom';
+/* eslint-disable react/prop-types */
+import { Link } from 'react-router-dom';
 
-const ProductCard = ({ name, price, img }) => {
+const ProductCard = ({ name, price, img, id, category }) => {
     return (
-        <NavLink
+        <Link
             // key={product.id}
             // href={product.href}
             className='group'
+            to={`/products/category/${category}/product/${id}`}
         >
             <div className='overflow-hidden rounded-lg bg-gray-200 mx-2 border-2 border-silver'>
                 <img
@@ -19,7 +21,7 @@ const ProductCard = ({ name, price, img }) => {
             <p className='mx-2 text-lg font-medium text-font font-roboto'>
                 $ {price}
             </p>
-        </NavLink>
+        </Link>
     );
 };
 

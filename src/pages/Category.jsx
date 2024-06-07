@@ -20,10 +20,12 @@ const CategoryPage = () => {
                 <div className='pt-8 grid grid-cols-2 gap-x-2 gap-y-6'>
                     {categoryItems.map((item) => (
                         <ProductCard
+                            id={item.id}
                             key={item.id}
                             img={item.img}
                             name={item.name}
                             price={item.price}
+                            category={item.category}
                         />
                     ))}
                 </div>
