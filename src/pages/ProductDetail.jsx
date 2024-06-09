@@ -2,9 +2,18 @@ import { NavLink, useParams } from 'react-router-dom';
 import { items } from '../data/products';
 import Button from '../components/UI/Button';
 import StarRating from '../components/StarRating';
+import TopItems from '../components/TopItems';
+import { useContext } from 'react';
+import CartContext from '../store/CartContext';
 
 const ProductDetailPage = () => {
     const { productId } = useParams();
+    const cartCtx = useContext(CartContext);
+
+    const handleAddPlanToCart = () => {
+        cartCtx.addItem(product);
+    };
+
     const product = items.find((item) => item.id === parseInt(productId, 10));
 
     const capitalizeFirstLetter = (string) => {
@@ -60,6 +69,7 @@ const ProductDetailPage = () => {
                             <NavLink
                                 to={`/products/category/${product.category}/product/${product.id}`}
                                 aria-current='page'
+                                className='text-[#ADADAD] hover:text-font'
                             >
                                 {capitalizeFirstLetter(product.name)}
                             </NavLink>
@@ -112,7 +122,7 @@ const ProductDetailPage = () => {
                         </div>
 
                         <div>
-                            <Button />
+                            <Button onClick={handleAddPlanToCart} />
                         </div>
                     </div>
                 </div>
@@ -128,6 +138,9 @@ const ProductDetailPage = () => {
                         </ul>
                     </div>
                 </div>
+            </div>
+            <div className='pb-8 bg-secondary'>
+                <TopItems />
             </div>
         </div>
     );

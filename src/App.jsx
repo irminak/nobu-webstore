@@ -10,6 +10,7 @@ import ProductDetailPage from './pages/ProductDetail.jsx';
 import InspirationsPage from './pages/Inspirations.jsx';
 import CartPage from './pages/Cart.jsx';
 import CategoryPage from './pages/Category.jsx';
+import ScrollToTop from './components/ScrollToTop.jsx';
 
 const router = createBrowserRouter([
     {
@@ -32,9 +33,11 @@ const router = createBrowserRouter([
 
 function App() {
     return (
-        <CartContextProvider>
-            <RouterProvider router={router} />
-        </CartContextProvider>
+        <>
+            <CartContextProvider>
+                <RouterProvider router={router} />
+            </CartContextProvider>
+        </>
     );
 }
 

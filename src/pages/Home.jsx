@@ -30,7 +30,9 @@ const HomePage = () => {
                     </p>
                 </NavLink>
             </section>
-            <TopItems />
+            <div className='my-4'>
+                <TopItems />
+            </div>
             <section className='px-4 py-8 flex flex-wrap gap-6'>
                 <InspirationCard
                     shape='aspect-square'

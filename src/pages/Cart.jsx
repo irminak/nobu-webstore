@@ -13,17 +13,11 @@ const CartPage = () => {
             <div className='pt-[70px]'>
                 <h2>Shopping Cart</h2>
                 <ul>
-                    {/* {cartCtx.items.map((item) => (
-                        <CartItem
-                            key={item.id}
-                            name={item.name}
-                            quantity={item.quantity}
-                            price={item.price}
-                            onIncrease={() => cartCtx.addItem(item)}
-                            onDecrease={() => cartCtx.removeItem(item.id)}
-                            onRemove={() => cartCtx.deleteItem(item.id)}
-                        />
-                    ))} */}
+                    {items.map((item) => (
+                        <div key={item.id}>
+                            <p>{item.name}</p>
+                        </div>
+                    ))}
                 </ul>
                 <div className='cart-note'>
                     {items.length === 0 ? (

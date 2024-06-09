@@ -71,7 +71,7 @@ const TopItems = () => {
         ],
     };
     return (
-        <section className='bg-secondary w-screen my-4 px-2 py-8 overflow-hidden'>
+        <section className='bg-secondary w-screen  px-2 py-8 overflow-hidden'>
             <h2 className='px-4 pb-4 text-font font-futura text-2xl uppercase font-normal'>
                 Our Top Choices
             </h2>
