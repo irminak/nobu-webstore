@@ -122,7 +122,10 @@ const ProductDetailPage = () => {
                         </div>
 
                         <div>
-                            <Button onClick={handleAddPlanToCart} />
+                            <Button
+                                onClick={handleAddPlanToCart}
+                                text='Add to cart'
+                            />
                         </div>
                     </div>
                 </div>
