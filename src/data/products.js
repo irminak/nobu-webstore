@@ -21,6 +21,7 @@ export const items = [
         img: 'https://i.postimg.cc/3Jryv8k3/temp-Image510-Gw-P.avif',
         rate: 3,
         totalCount: 117,
+        stock: true,
     },
     {
         id: 2,
@@ -41,6 +42,7 @@ export const items = [
             'Pre-washed & pre-shrunk',
             'Ultra-soft 100% cotton',
         ],
+        stock: true,
     },
     {
         id: 3,
@@ -61,6 +63,7 @@ export const items = [
             'Pre-washed & pre-shrunk',
             'Ultra-soft 100% cotton',
         ],
+        stock: true,
     },
     {
         id: 4,
@@ -81,6 +84,8 @@ export const items = [
             'Pre-washed & pre-shrunk',
             'Ultra-soft 100% cotton',
         ],
+        stock: false,
+        time: '2-3 weeks',
     },
     {
         id: 5,
@@ -101,6 +106,7 @@ export const items = [
             'Pre-washed & pre-shrunk',
             'Ultra-soft 100% cotton',
         ],
+        stock: true,
     },
     {
         id: 6,
@@ -121,6 +127,7 @@ export const items = [
             'Pre-washed & pre-shrunk',
             'Ultra-soft 100% cotton',
         ],
+        stock: true,
     },
 
     {
@@ -142,6 +149,7 @@ export const items = [
             'Pre-washed & pre-shrunk',
             'Ultra-soft 100% cotton',
         ],
+        stock: true,
     },
     {
         id: 8,
@@ -162,6 +170,7 @@ export const items = [
             'Pre-washed & pre-shrunk',
             'Ultra-soft 100% cotton',
         ],
+        stock: true,
     },
     {
         id: 9,
@@ -182,6 +191,7 @@ export const items = [
             'Pre-washed & pre-shrunk',
             'Ultra-soft 100% cotton',
         ],
+        stock: true,
     },
 
     {
@@ -202,6 +212,7 @@ export const items = [
             'Pre-washed & pre-shrunk',
             'Ultra-soft 100% cotton',
         ],
+        stock: true,
     },
     {
         id: 11,
@@ -222,6 +233,7 @@ export const items = [
             'Pre-washed & pre-shrunk',
             'Ultra-soft 100% cotton',
         ],
+        stock: true,
     },
     {
         id: 12,
@@ -241,5 +253,7 @@ export const items = [
             'Pre-washed & pre-shrunk',
             'Ultra-soft 100% cotton',
         ],
+        stock: false,
+        time: '5 days',
     },
 ];
