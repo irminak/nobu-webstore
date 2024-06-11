@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import CartContext from '../store/CartContext';
 import CartItem from '../components/CartItem';
 import Button from '../components/UI/Button';
@@ -7,6 +7,7 @@ import { BsStars } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
 const CartPage = () => {
+    const [shippingPrice, setShippingPrice] = useState(0);
     const { items, addItem, removeItem, deleteItem } = useContext(CartContext);
 
     const cartTotal = items.reduce(
@@ -14,7 +15,17 @@ const CartPage = () => {
         0
     );
 
-    const totalWithShipping = (cartTotal + 10).toFixed(2);
+    useEffect(() => {
+        if (cartTotal < 50) {
+            setShippingPrice(10);
+        } else if (cartTotal > 50 && cartTotal < 200) {
+            setShippingPrice(15);
+        } else {
+            setShippingPrice(30);
+        }
+    }, [cartTotal]);
+
+    const totalWithShipping = (cartTotal + shippingPrice).toFixed(2);
     return (
         <>
             <div className='pt-[70px] px-4 text-font'>
@@ -65,14 +76,16 @@ const CartPage = () => {
                                 </div>
                                 <div className='py-4 flex justify-between border-b-2 border-secondary'>
                                     <p>Shipping</p>
-                                    <p>$10</p>
+                                    <p>${shippingPrice}.00</p>
                                 </div>
                                 <div className='py-6 flex justify-between text-lg font-medium'>
                                     <p>Order total</p>
                                     <p>${totalWithShipping}</p>
                                 </div>
                             </div>
-                            <Button text='Checkout' />
+                            <Link to='/checkout'>
+                                <Button text='Checkout' />
+                            </Link>
                         </section>
                     </div>
                 )}

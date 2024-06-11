@@ -23,3 +23,11 @@
 html {
     /* height: 300vh; */
 }
+
+.pointer-events-auto {
+    pointer-events: auto; /* Allow interactions */
+}
+
+.pointer-events-none {
+    pointer-events: none; /* Disable interactions */
+}

@@ -10,6 +10,7 @@ import ProductDetailPage from './pages/ProductDetail.jsx';
 import InspirationsPage from './pages/Inspirations.jsx';
 import CartPage from './pages/Cart.jsx';
 import CategoryPage from './pages/Category.jsx';
+import CheckoutPage from './pages/Checkout.jsx';
 
 const router = createBrowserRouter([
     {
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
             },
             { path: '/inspirations', element: <InspirationsPage /> },
             { path: '/cart', element: <CartPage /> },
+            { path: '/checkout', element: <CheckoutPage /> },
         ],
     },
 ]);
