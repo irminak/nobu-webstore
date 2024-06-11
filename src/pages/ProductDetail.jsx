@@ -5,6 +5,7 @@ import StarRating from '../components/StarRating';
 import TopItems from '../components/TopItems';
 import { useContext } from 'react';
 import CartContext from '../store/CartContext';
+import Alert from '../components/UI/Alert';
 
 const ProductDetailPage = () => {
     const { productId } = useParams();
@@ -21,10 +22,11 @@ const ProductDetailPage = () => {
         return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
     };
 
-    console.log(product);
-
     return (
-        <div className='pt-[70px]'>
+        <div className='pt-[70px] reative'>
+            <div className='absolute'>
+                <Alert />
+            </div>
             <div className='px-4'>
                 <nav
                     aria-label='Breadcrumb'

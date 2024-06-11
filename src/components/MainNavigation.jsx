@@ -1,12 +1,14 @@
 // import { NavLink } from 'react-router-dom';
 import { FiMenu } from 'react-icons/fi';
 import { IoClose, IoCartOutline } from 'react-icons/io5';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import DrawerMenu from './DrawerMenu';
 import { NavLink } from 'react-router-dom';
+import CartContext from '../store/CartContext';
 
 const MainNavigation = () => {
     const [menuIsActive, setMenuIsActive] = useState(false);
+    const { items } = useContext(CartContext);
 
     const toggleMenu = (state) => {
         setMenuIsActive(state);
@@ -30,11 +32,28 @@ const MainNavigation = () => {
                     >
                         {menuIsActive ? <IoClose /> : <FiMenu />}
                     </div>
+
                     <NavLink
                         to='/cart'
-                        className='cursor-pointer'
+                        className='cursor-pointer relative'
                     >
                         <IoCartOutline />
+                        {items.length !== 0 && items.length < 10 ? (
+                            <div className=' bg-contrast w-[16px] h-[16px] absolute rounded-full -top-1 -right-1 flex items-center justify-center'>
+                                <p className='text-font font-roboto text-[10px] leading-[18px]'>
+                                    {items.length}
+                                </p>
+                            </div>
+                        ) : (
+                            items.length !== 0 &&
+                            items.length > 9 && (
+                                <div className=' bg-contrast w-[16px] h-[16px] absolute rounded-full -top-1 -right-1 flex items-center justify-center'>
+                                    <p className='text-font font-roboto text-[10px] leading-[18px]'>
+                                        9+
+                                    </p>
+                                </div>
+                            )
+                        )}
                     </NavLink>
                 </div>
             </section>

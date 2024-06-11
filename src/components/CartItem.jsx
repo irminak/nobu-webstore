@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { IoCheckmark, IoTime } from 'react-icons/io5';
 import { FaTrashCan } from 'react-icons/fa6';
 

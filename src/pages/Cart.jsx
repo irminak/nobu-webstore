@@ -4,6 +4,7 @@ import CartItem from '../components/CartItem';
 import Button from '../components/UI/Button';
 
 import { BsStars } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 const CartPage = () => {
     const { items, addItem, removeItem, deleteItem } = useContext(CartContext);
@@ -30,7 +31,9 @@ const CartPage = () => {
                                 <BsStars className='text-contrast' />
                             </div>
                         </div>
-                        <Button text='Continue shopping' />
+                        <Link to='/products'>
+                            <Button text='Continue shopping' />
+                        </Link>
                     </div>
                 ) : (
                     <div className='flex flex-col py-4'>
