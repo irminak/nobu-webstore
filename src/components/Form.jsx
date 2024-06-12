@@ -13,6 +13,7 @@ const Form = () => {
     const {
         values,
         errors,
+        touched,
         handleBlur,
         handleChange,
         handleSubmit,
@@ -38,9 +39,10 @@ const Form = () => {
         <form
             onSubmit={handleSubmit}
             autoComplete='off'
+            className='font-roboto text-font'
         >
-            <section>
-                <h3>Contact information</h3>
+            <section className='py-4'>
+                <h3 className='pb-4 text-xl'>Contact information</h3>
                 <Input
                     label='Email address'
                     value={values.email}
@@ -49,10 +51,12 @@ const Form = () => {
                     type='email'
                     placeholder='Enter email'
                     onBlur={handleBlur}
+                    errors={errors.email}
+                    touched={touched.email}
                 />
             </section>
-            <section>
-                <h3>Payment details</h3>
+            <section className='py-4'>
+                <h3 className='pb-4 text-xl'>Payment details</h3>
                 <div>
                     <Input
                         label='Cardholder name'
@@ -62,6 +66,8 @@ const Form = () => {
                         type='text'
                         placeholder='John Doe'
                         onBlur={handleBlur}
+                        errors={errors.name}
+                        touched={touched.name}
                     />
                     <Input
                         label='Card number'
@@ -71,9 +77,11 @@ const Form = () => {
                         type='text'
                         placeholder='XXXX-XXXX-XXXX-XXXX'
                         onBlur={handleBlur}
+                        errors={errors.card}
+                        touched={touched.card}
                     />
                 </div>
-                <div>
+                <div className='flex gap-4'>
                     <Input
                         label='Expiration date'
                         value={values.exp}
@@ -82,6 +90,9 @@ const Form = () => {
                         type='text'
                         placeholder='MM/YYYY'
                         onBlur={handleBlur}
+                        errors={errors.exp}
+                        touched={touched.exp}
+                        className='grow'
                     />{' '}
                     <Input
                         label='Security code'
@@ -91,11 +102,14 @@ const Form = () => {
                         type='text'
                         placeholder='CVC'
                         onBlur={handleBlur}
+                        errors={errors.cvc}
+                        touched={touched.cvc}
+                        className='w-[100px]'
                     />
                 </div>
             </section>
-            <section>
-                <h3>Shipping address</h3>
+            <section className='py-4'>
+                <h3 className='pb-4 text-xl'>Shipping address</h3>
                 <div>
                     <Input
                         label='Street'
@@ -105,6 +119,8 @@ const Form = () => {
                         type='text'
                         placeholder=''
                         onBlur={handleBlur}
+                        errors={errors.street}
+                        touched={touched.street}
                     />
                     <Input
                         label='Apartment, suite, etc.'
@@ -114,9 +130,11 @@ const Form = () => {
                         type='text'
                         placeholder=''
                         onBlur={handleBlur}
+                        errors={errors.apartment}
+                        touched={touched.apartment}
                     />
                 </div>
-                <div>
+                <div className='flex gap-4'>
                     <Input
                         label='City'
                         value={values.city}
@@ -125,6 +143,9 @@ const Form = () => {
                         type='text'
                         placeholder=''
                         onBlur={handleBlur}
+                        errors={errors.city}
+                        touched={touched.city}
+                        className='grow'
                     />
                     <Input
                         label='Postal code'
@@ -134,6 +155,9 @@ const Form = () => {
                         type='text'
                         placeholder=''
                         onBlur={handleBlur}
+                        errors={errors.post}
+                        touched={touched.post}
+                        className='w-[140px]'
                     />
                 </div>
             </section>

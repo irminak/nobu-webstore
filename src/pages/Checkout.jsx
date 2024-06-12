@@ -24,7 +24,7 @@ const CheckoutPage = () => {
 
     const totalWithShipping = (cartTotal + shippingPrice).toFixed(2);
     return (
-        <div className='pt-[70px] reative'>
+        <div className='pt-[70px] reative flex flex-col'>
             <div>
                 <div className='px-4'>
                     <nav
@@ -94,7 +94,7 @@ const CheckoutPage = () => {
                     </div>
                 </section>
             </div>
-            <div>
+            <div className='px-4 py-4'>
                 <Form />
             </div>
         </div>
