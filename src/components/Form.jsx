@@ -1,8 +1,23 @@
 import { useFormik } from 'formik';
 import Input from './UI/Input';
+import { schema } from './schemas';
+
+const onSubmit = async (values, actions) => {
+    console.log(values);
+    console.log(actions);
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    actions.resetForm();
+};
 
 const Form = () => {
-    const { values, handleBlur, handleChange } = useFormik({
+    const {
+        values,
+        errors,
+        handleBlur,
+        handleChange,
+        handleSubmit,
+        isSubmitting,
+    } = useFormik({
         initialValues: {
             email: '',
             name: '',
@@ -14,9 +29,16 @@ const Form = () => {
             city: '',
             post: '',
         },
+        validationSchema: schema,
+        onSubmit,
     });
+
+    console.log(errors);
     return (
-        <form autoComplete='off'>
+        <form
+            onSubmit={handleSubmit}
+            autoComplete='off'
+        >
             <section>
                 <h3>Contact information</h3>
                 <Input
@@ -46,7 +68,7 @@ const Form = () => {
                         value={values.card}
                         onChange={handleChange}
                         id='card'
-                        type='number'
+                        type='text'
                         placeholder='XXXX-XXXX-XXXX-XXXX'
                         onBlur={handleBlur}
                     />
@@ -57,7 +79,7 @@ const Form = () => {
                         value={values.exp}
                         onChange={handleChange}
                         id='exp'
-                        type='number'
+                        type='text'
                         placeholder='MM/YYYY'
                         onBlur={handleBlur}
                     />{' '}
@@ -66,7 +88,7 @@ const Form = () => {
                         value={values.cvc}
                         onChange={handleChange}
                         id='cvc'
-                        type='number'
+                        type='text'
                         placeholder='CVC'
                         onBlur={handleBlur}
                     />
@@ -115,8 +137,16 @@ const Form = () => {
                     />
                 </div>
             </section>
+            <button
+                type='sumbit'
+                disabled={isSubmitting}
+            >
+                Submit
+            </button>
         </form>
     );
 };
 
 export default Form;
+
+// className={errors.password &&touched.pasword ? 'input-error': ''}
