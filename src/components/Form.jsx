@@ -1,15 +1,19 @@
 import { useFormik } from 'formik';
 import Input from './UI/Input';
 import { schema } from './schemas';
+import Button from './UI/Button';
+import CartContext from '../store/CartContext';
+import { useContext } from 'react';
 
-const onSubmit = async (values, actions) => {
-    console.log(values);
-    console.log(actions);
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    actions.resetForm();
-};
-
-const Form = () => {
+const Form = ({ setThanksMessage }) => {
+    const onSubmit = async (values, actions) => {
+        console.log(values);
+        console.log(actions);
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        actions.resetForm();
+        setThanksMessage(true);
+        resetCart();
+    };
     const {
         values,
         errors,
@@ -34,7 +38,6 @@ const Form = () => {
         onSubmit,
     });
 
-    console.log(errors);
     return (
         <form
             onSubmit={handleSubmit}
@@ -161,12 +164,10 @@ const Form = () => {
                     />
                 </div>
             </section>
-            <button
-                type='sumbit'
+            <Button
+                text='Submit'
                 disabled={isSubmitting}
-            >
-                Submit
-            </button>
+            />
         </form>
     );
 };
