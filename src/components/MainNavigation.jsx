@@ -16,16 +16,16 @@ const MainNavigation = () => {
 
     return (
         <>
-            <section className='px-4 h-[70px] w-screen fixed flex items-center justify-between bg-[#ffffffee] z-10'>
+            <section className='px-4 sm:px-8 h-[70px] sm:h-[90px] w-screen fixed flex items-center justify-between bg-[#ffffffee] z-10'>
                 <NavLink
                     to='/'
                     onClick={() => setMenuIsActive(false)}
                 >
-                    <h1 className='relative top-1 font-tan text-font text-2xl'>
+                    <h1 className='relative top-1 font-tan text-font text-2xl sm:text-4xl'>
                         NOBU
                     </h1>
                 </NavLink>
-                <div className='flex gap-4 text-3xl text-font'>
+                <div className='flex gap-4 sm:gap-8 text-3xl sm:text-4xl text-font'>
                     <div
                         className='cursor-pointer'
                         onClick={() => setMenuIsActive(!menuIsActive)}
@@ -39,8 +39,8 @@ const MainNavigation = () => {
                     >
                         <IoCartOutline />
                         {items.length !== 0 && items.length < 10 ? (
-                            <div className=' bg-contrast w-[16px] h-[16px] absolute rounded-full -top-1 -right-1 flex items-center justify-center'>
-                                <p className='text-font font-roboto text-[10px] leading-[18px]'>
+                            <div className=' bg-contrast w-[16px] sm:w-[20px] h-[16px] sm:h-[20px] absolute rounded-full -top-1 -right-1 flex items-center justify-center'>
+                                <p className='text-font font-roboto text-[10px] sm:text-[12px] leading-[18px] sm:leading-[20pxpx]'>
                                     {items.length}
                                 </p>
                             </div>

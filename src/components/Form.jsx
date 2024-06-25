@@ -6,6 +6,8 @@ import CartContext from '../store/CartContext';
 import { useContext } from 'react';
 
 const Form = ({ setThanksMessage }) => {
+    const { resetCart } = useContext(CartContext);
+
     const onSubmit = async (values, actions) => {
         console.log(values);
         console.log(actions);

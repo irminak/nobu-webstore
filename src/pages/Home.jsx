@@ -4,15 +4,15 @@ import TopItems from '../components/TopItems';
 
 const HomePage = () => {
     return (
-        <div className='pt-[70px]'>
+        <div className='pt-[70px] sm:pt-[90px]'>
             <section className='p-4 flex flex-col flex-wrap gap-4 '>
                 <NavLink
                     to='/inspirations'
                     className='w-full cursor-pointer'
                 >
-                    <div className='h-[400px] bg-plants bg-no-repeat bg-center bg-cover rounded-xl'>
-                        <div className='p-4 h-[400px] w-full flex items-end rounded-xl bg-[#2e2e2e30] '>
-                            <h2 className='text-4xl font-medium text-silver font-futura uppercase'>
+                    <div className='h-[400px] sm:h-[500px] bg-plants bg-no-repeat bg-center bg-cover rounded-xl'>
+                        <div className='p-4  h-[400px] sm:h-[500px] w-full flex items-end rounded-xl bg-[#2e2e2e30] '>
+                            <h2 className='text-4xl sm:text-6xl font-medium text-silver font-futura uppercase'>
                                 Get Inspired
                             </h2>
                         </div>
@@ -20,12 +20,12 @@ const HomePage = () => {
                 </NavLink>
                 <NavLink
                     to='/products'
-                    className='p-4 flex flex-grow flex-wrap items-end bg-contrast rounded-xl'
+                    className='p-4 flex sm:flex-col flex-grow flex-wrap items-end sm:items-start bg-contrast rounded-xl'
                 >
-                    <h2 className='text-4xl font-medium text-silver font-futura uppercase cursor-pointer'>
+                    <h2 className='sm:mb-4 text-4xl sm:text-6xl font-medium text-silver font-futura uppercase cursor-pointer'>
                         Go Shopping
                     </h2>
-                    <p className='py-2 border-t-2 text-silver'>
+                    <p className='py-2 sm:py-4 border-t-2 text-silver sm:text-2xl'>
                         Create your space
                     </p>
                 </NavLink>
