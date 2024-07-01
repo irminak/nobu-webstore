@@ -8,9 +8,9 @@ const Alert = ({ show, name }) => {
                 show ? 'translate-x-0' : '-translate-x-full'
             }`}
         >
-            <div className='py-4 pl-4 pr-8 flex items-center justify-center'>
-                <IoCheckmarkCircleOutline className='text-3xl text-primary' />
-                <p className='pl-4'>
+            <div className='py-4 sm:py-8 pl-4 pr-8 flex items-center justify-center'>
+                <IoCheckmarkCircleOutline className='text-3xl sm:text-4xl text-primary' />
+                <p className='pl-4 sm:text-2xl'>
                     Product <span className='font-medium'>{name} </span>has been
                     added to the cart
                 </p>

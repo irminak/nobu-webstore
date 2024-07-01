@@ -28,17 +28,17 @@ const CartPage = () => {
     const totalWithShipping = (cartTotal + shippingPrice).toFixed(2);
     return (
         <>
-            <div className='pt-[70px] px-4 text-font'>
+            <div className='pt-[70px] sm:pt-[90px] px-4 text-font'>
                 <div>
-                    <h2 className='py-4 font-roboto text-2xl font-medium'>
+                    <h2 className='py-4 sm:pl-4 font-roboto text-2xl sm:text-4xl font-medium'>
                         Shopping Cart
                     </h2>
                 </div>
                 {items.length === 0 ? (
                     <div className='pb-8'>
-                        <div className='border-t-2 border-b-2 border-silver py-6 my-6 px-4 text-lg text-center font-futura text-font relative'>
+                        <div className='border-t-2 border-b-2 border-silver py-6 sm:py-10 my-6 px-4 text-lg sm:text-2xl text-center font-futura text-font relative'>
                             <p>Your cart is empty. Go back and get inspired.</p>
-                            <div className='absolute top-5 right-1'>
+                            <div className='absolute top-5 right-1 sm:right-[160px]'>
                                 <BsStars className='text-contrast' />
                             </div>
                         </div>
@@ -65,20 +65,20 @@ const CartPage = () => {
                             ))}
                         </section>
 
-                        <section className='py-6 px-4 bg-silver rounded-lg font-roboto'>
-                            <h3 className=' text-xl font-medium'>
+                        <section className='py-6 sm:py-8 px-4 bg-silver rounded-lg font-roboto'>
+                            <h3 className=' text-xl sm:text-3xl font-medium'>
                                 Order summary
                             </h3>
                             <div className='py-4'>
-                                <div className='py-4 flex justify-between border-b-2 border-secondary'>
+                                <div className='py-4 sm:py-6 flex justify-between border-b-2 border-secondary sm:text-2xl'>
                                     <p>Subtotal</p>
                                     <p>${cartTotal.toFixed(2)}</p>
                                 </div>
-                                <div className='py-4 flex justify-between border-b-2 border-secondary'>
+                                <div className='py-4 sm:py-6 flex justify-between border-b-2 border-secondary sm:text-2xl'>
                                     <p>Shipping</p>
                                     <p>${shippingPrice}.00</p>
                                 </div>
-                                <div className='py-6 flex justify-between text-lg font-medium'>
+                                <div className='py-6 sm:py-8 flex justify-between text-lg font-medium sm:text-2xl'>
                                     <p>Order total</p>
                                     <p>${totalWithShipping}</p>
                                 </div>

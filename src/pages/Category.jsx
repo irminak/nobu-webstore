@@ -8,16 +8,16 @@ const CategoryPage = () => {
     const categoryItems = items.filter((item) => item.category === category);
 
     return (
-        <div className='pt-[70px]'>
+        <div className='pt-[70px] sm:pt-[90px]'>
             <div className='p-4'>
                 <InspirationCard
-                    shape='h-[160px]'
+                    shape='h-[160px] sm:h-[260px]'
                     text={category}
                     bg={category}
                     position='items-end'
                     category={category}
                 />
-                <div className='pt-8 grid grid-cols-2 gap-x-2 gap-y-6'>
+                <div className='pt-8 sm:pt-12 grid grid-cols-2 gap-x-2 gap-y-6'>
                     {categoryItems.map((item) => (
                         <ProductCard
                             id={item.id}

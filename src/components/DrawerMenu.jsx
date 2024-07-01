@@ -4,12 +4,12 @@ import { NavLink } from 'react-router-dom';
 const DrawerMenu = ({ isOpen, toggleMenu }) => {
     return (
         <div
-            className={`fixed bg-white opacity-90 w-4/6 top-[70px] right-0 h-screen transform transition-transform duration-300 z-10 ${
+            className={`fixed bg-white opacity-90 w-4/6 sm:w-1/2 top-[70px] sm:top-[89px] right-0 h-screen transform transition-transform duration-300 z-10 ${
                 isOpen ? 'translate-x-0' : 'translate-x-full'
             }`}
         >
-            <ul className='uppercase list-none font-futura text-xl text-font text-center'>
-                <li className='p-6 border-b-2 border-primary'>
+            <ul className='uppercase list-none font-futura text-xl sm:text-4xl text-font text-center'>
+                <li className='p-6 sm:p-10 border-b-2 border-primary'>
                     <NavLink
                         onClick={() => toggleMenu(false)}
                         to='/inspirations'
@@ -19,7 +19,7 @@ const DrawerMenu = ({ isOpen, toggleMenu }) => {
                         Inspirations
                     </NavLink>
                 </li>
-                <li className='p-6 border-b-2 border-primary'>
+                <li className='p-6 sm:p-10 border-b-2 border-primary'>
                     <NavLink
                         onClick={() => toggleMenu(false)}
                         to='/products'

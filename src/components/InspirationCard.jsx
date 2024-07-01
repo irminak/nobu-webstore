@@ -18,9 +18,9 @@ const InspirationCard = ({ shape, text, category, bg, position, color }) => {
                 style={backgroundImage ? { backgroundImage } : {}}
             >
                 <div
-                    className={`p-4 w-full flex rounded-xl bg-[#2e2e2e30] ${shape} ${position}`}
+                    className={`p-4 sm:p-8 w-full flex rounded-xl bg-[#2e2e2e30] ${shape} ${position}`}
                 >
-                    <h2 className='text-3xl font-medium text-silver font-futura lowercase'>
+                    <h2 className='text-3xl sm:text-6xl font-medium text-silver font-futura lowercase'>
                         {text}
                     </h2>
                 </div>

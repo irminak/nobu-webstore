@@ -20,12 +20,12 @@ const HomePage = () => {
                 </NavLink>
                 <NavLink
                     to='/products'
-                    className='p-4 flex sm:flex-col flex-grow flex-wrap items-end sm:items-start bg-contrast rounded-xl'
+                    className='p-4 sm:pt-6 flex sm:flex-col flex-grow flex-wrap items-end sm:items-start bg-contrast rounded-xl'
                 >
                     <h2 className='sm:mb-4 text-4xl sm:text-6xl font-medium text-silver font-futura uppercase cursor-pointer'>
                         Go Shopping
                     </h2>
-                    <p className='py-2 sm:py-4 border-t-2 text-silver sm:text-2xl'>
+                    <p className='py-2 sm:py-4 border-t-2 text-silver sm:text-3xl sm:font-light'>
                         Create your space
                     </p>
                 </NavLink>
@@ -42,7 +42,7 @@ const HomePage = () => {
                     category='candles'
                 />
                 <InspirationCard
-                    shape='h-[200px]'
+                    shape='h-[300px] sm:h-[400px]'
                     text='Shine'
                     bg='lamps'
                     position='items-end'
@@ -56,14 +56,14 @@ const HomePage = () => {
                     category='furniture'
                 />
                 <InspirationCard
-                    shape='h-[200px]'
+                    shape='h-[200px] sm:h-[300px]'
                     text='Other categories'
                     color='primary'
                     position='items-center'
                     category=''
                 />
                 <InspirationCard
-                    shape='h-[400px]'
+                    shape='h-[400px] sm:h-[500px]'
                     text='Skincare'
                     bg='cosmetics'
                     position='items-end'

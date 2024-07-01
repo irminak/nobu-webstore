@@ -30,14 +30,18 @@ const MainNavigation = () => {
                         className='cursor-pointer'
                         onClick={() => setMenuIsActive(!menuIsActive)}
                     >
-                        {menuIsActive ? <IoClose /> : <FiMenu />}
+                        {menuIsActive ? (
+                            <IoClose className='sm:text-5xl' />
+                        ) : (
+                            <FiMenu className='sm:text-5xl' />
+                        )}
                     </div>
 
                     <NavLink
                         to='/cart'
                         className='cursor-pointer relative'
                     >
-                        <IoCartOutline />
+                        <IoCartOutline className='sm:text-5xl' />
                         {items.length !== 0 && items.length < 10 ? (
                             <div className=' bg-contrast w-[16px] sm:w-[20px] h-[16px] sm:h-[20px] absolute rounded-full -top-1 -right-1 flex items-center justify-center'>
                                 <p className='text-font font-roboto text-[10px] sm:text-[12px] leading-[18px] sm:leading-[20pxpx]'>

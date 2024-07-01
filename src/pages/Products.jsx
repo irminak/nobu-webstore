@@ -5,9 +5,9 @@ import { items, categories } from '../data/products';
 const ProductsPage = () => {
     return (
         <>
-            <div className='pt-[70px]'>
+            <div className='pt-[70px] sm:pt-[90px]'>
                 <div className='p-4'>
-                    <div className='p-4 flex flex-wrap justify-between gap-4'>
+                    <div className='p-4 sm:py-6 flex flex-wrap justify-between sm:justify-center gap-4 sm:gap-8'>
                         {categories.map((category) => (
                             <Badge
                                 key={category}

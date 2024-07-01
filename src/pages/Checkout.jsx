@@ -26,12 +26,12 @@ const CheckoutPage = () => {
 
     const totalWithShipping = (cartTotal + shippingPrice).toFixed(2);
     return (
-        <div className='pt-[70px] reative flex flex-col'>
+        <div className='pt-[70px] sm:pt-[90px] reative flex flex-col'>
             {thanksMessage ? (
                 <div className='my-4 px-4'>
                     <div className='px-4'>
-                        <section className='mb-4 py-6 px-4 bg-silver rounded-lg font-futura text-font'>
-                            <h3 className=' text-xl text-center'>
+                        <section className='mb-4 py-6 sm:py-12 px-4 bg-silver rounded-lg font-futura text-font'>
+                            <h3 className=' text-xl sm:text-2xl text-center'>
                                 Thank you for your order. <br />
                                 We are working on it.
                             </h3>
@@ -52,11 +52,11 @@ const CheckoutPage = () => {
                         <div className='px-4'>
                             <nav
                                 aria-label='Breadcrumb'
-                                className='py-4'
+                                className='py-4 sm:pb-8'
                             >
                                 <ol
                                     role='list'
-                                    className='mx-auto flex max-w-2xl font-futura text-font text-base'
+                                    className=' flex max-w-2xl font-futura text-font text-base sm:text-2xl'
                                 >
                                     <li className='flex'>
                                         <NavLink to='/'>Home</NavLink>
@@ -66,7 +66,7 @@ const CheckoutPage = () => {
                                             viewBox='0 0 16 20'
                                             fill='currentColor'
                                             aria-hidden='true'
-                                            className='h-5 w-4 text-gray-300'
+                                            className='h-5 sm:h-8 w-4 text-gray-300'
                                         >
                                             <path d='M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z' />
                                         </svg>
@@ -79,7 +79,7 @@ const CheckoutPage = () => {
                                             viewBox='0 0 16 20'
                                             fill='currentColor'
                                             aria-hidden='true'
-                                            className='h-5 w-4 text-gray-300'
+                                            className='h-5 sm:h-8 w-4 text-gray-300'
                                         >
                                             <path d='M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z' />
                                         </svg>
@@ -99,20 +99,20 @@ const CheckoutPage = () => {
                         </div>
                     </div>
                     <div className='px-4'>
-                        <section className='mb-4 py-6 px-4 bg-silver rounded-lg font-roboto'>
-                            <h3 className=' text-xl font-medium'>
+                        <section className='mb-4 py-6 sm:py-8 px-4 bg-silver rounded-lg font-roboto'>
+                            <h3 className=' text-xl sm:text-3xl font-medium'>
                                 Order summary
                             </h3>
                             <div className='py-4'>
-                                <div className='py-4 flex justify-between border-b-2 border-secondary'>
+                                <div className='py-4 sm:py-6 flex justify-between border-b-2 border-secondary sm:text-2xl'>
                                     <p>Subtotal</p>
                                     <p>${cartTotal.toFixed(2)}</p>
                                 </div>
-                                <div className='py-4 flex justify-between border-b-2 border-secondary'>
+                                <div className='py-4 sm:py-6 flex justify-between border-b-2 border-secondary sm:text-2xl'>
                                     <p>Shipping</p>
                                     <p>${shippingPrice}.00</p>
                                 </div>
-                                <div className='pt-6 flex justify-between text-lg font-medium'>
+                                <div className='pt-6 sm:pt-8 flex justify-between text-lg font-medium sm:text-2xl'>
                                     <p>Order total</p>
                                     <p>${totalWithShipping}</p>
                                 </div>

@@ -35,15 +35,15 @@ const ProductDetailPage = () => {
     }, [showAlert]);
 
     return (
-        <div className='pt-[70px] reative'>
+        <div className='pt-[90px] reative'>
             <div className='px-4'>
                 <nav
                     aria-label='Breadcrumb'
-                    className='py-4'
+                    className='py-4 sm:pb-8'
                 >
                     <ol
                         role='list'
-                        className='mx-auto flex max-w-2xl font-futura text-font text-base'
+                        className=' flex max-w-2xl font-futura text-font text-base sm:text-2xl'
                     >
                         <li className='flex'>
                             <NavLink to='/products'>Products</NavLink>
@@ -53,7 +53,7 @@ const ProductDetailPage = () => {
                                 viewBox='0 0 16 20'
                                 fill='currentColor'
                                 aria-hidden='true'
-                                className='h-5 w-4 text-gray-300'
+                                className='h-5 sm:h-8 w-4 text-gray-300'
                             >
                                 <path d='M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z' />
                             </svg>
@@ -70,7 +70,7 @@ const ProductDetailPage = () => {
                                 viewBox='0 0 16 20'
                                 fill='currentColor'
                                 aria-hidden='true'
-                                className='h-5 w-4 text-gray-300'
+                                className='h-5 sm:h-8 w-4 text-gray-300'
                             >
                                 <path d='M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z' />
                             </svg>
@@ -98,12 +98,14 @@ const ProductDetailPage = () => {
                     </div>
                     <div className='flex flex-col gap-4 font-futura text-font'>
                         <div className='pt-8'>
-                            <h2 className='text-2xl font-medium'>
+                            <h2 className='text-2xl sm:text-4xl font-medium'>
                                 {product.name}
                             </h2>
                         </div>
                         <div>
-                            <p className='text-2xl'>$ {product.price}</p>
+                            <p className='text-2xl sm:text-4xl'>
+                                $ {product.price}
+                            </p>
                         </div>
                         <div>
                             <StarRating
@@ -111,7 +113,7 @@ const ProductDetailPage = () => {
                                 totalCount={product.totalCount}
                             />
                         </div>
-                        <div className=' flex flex-col gap-2'>
+                        <div className=' flex flex-col gap-2 sm:text-2xl'>
                             <p>
                                 Size:{' '}
                                 <span className='font-medium'>
@@ -142,10 +144,12 @@ const ProductDetailPage = () => {
                 </div>
 
                 <div className=' py-8 flex flex-col font-roboto text-font gap-4'>
-                    <p className='text-lg'>{product.description}</p>
+                    <p className='sm:pb-4 text-lg sm:text-2xl'>
+                        {product.description}
+                    </p>
                     <div>
-                        <h3 className='font-medium'>Highlights</h3>
-                        <ul className='list-disc pl-4 py-2'>
+                        <h3 className='font-medium sm:text-2xl'>Highlights</h3>
+                        <ul className='sm:ml-2 list-disc pl-4 py-2 sm:text-2xl'>
                             {product.highlights.map((highlight) => (
                                 <li key={highlight}>{highlight}</li>
                             ))}
@@ -157,7 +161,7 @@ const ProductDetailPage = () => {
             <div className='pb-8 bg-secondary'>
                 <TopItems />
             </div>
-            <div className='fixed z-10 top-[70px] right-0'>
+            <div className='fixed z-10 top-[70px] sm:top-[90px] right-0'>
                 <Alert
                     show={showAlert}
                     name={product.name}

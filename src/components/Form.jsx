@@ -47,7 +47,9 @@ const Form = ({ setThanksMessage }) => {
             className='font-roboto text-font'
         >
             <section className='py-4'>
-                <h3 className='pb-4 text-xl'>Contact information</h3>
+                <h3 className='pb-4 text-xl sm:text-3xl'>
+                    Contact information
+                </h3>
                 <Input
                     label='Email address'
                     value={values.email}
@@ -61,7 +63,7 @@ const Form = ({ setThanksMessage }) => {
                 />
             </section>
             <section className='py-4'>
-                <h3 className='pb-4 text-xl'>Payment details</h3>
+                <h3 className='pb-4 text-xl sm:text-3xl'>Payment details</h3>
                 <div>
                     <Input
                         label='Cardholder name'
@@ -109,12 +111,12 @@ const Form = ({ setThanksMessage }) => {
                         onBlur={handleBlur}
                         errors={errors.cvc}
                         touched={touched.cvc}
-                        className='w-[100px]'
+                        className='w-[100px] sm:w-[160px]'
                     />
                 </div>
             </section>
             <section className='py-4'>
-                <h3 className='pb-4 text-xl'>Shipping address</h3>
+                <h3 className='pb-4 text-xl sm:text-3xl'>Shipping address</h3>
                 <div>
                     <Input
                         label='Street'
@@ -162,7 +164,7 @@ const Form = ({ setThanksMessage }) => {
                         onBlur={handleBlur}
                         errors={errors.post}
                         touched={touched.post}
-                        className='w-[140px]'
+                        className='w-[140px] sm:w-[220px]'
                     />
                 </div>
             </section>
