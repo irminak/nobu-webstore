@@ -9,7 +9,7 @@ const Footer = () => {
                     <h1 className='font-tan text-2xl sm:text-4xl'>NOBU</h1>
                 </NavLink>
             </div>
-            <div className='py-4 flex gap-4 sm:gap-8 text-3xl sm:text-4xl'>
+            <div className='py-4 lg:py-12 flex gap-4 sm:gap-8 text-3xl sm:text-4xl lg:justify-center'>
                 <a
                     href=''
                     id=''
@@ -29,20 +29,26 @@ const Footer = () => {
                     <FaTiktok />
                 </a>
             </div>
-            <div className='py-4 sm:py-8 font-roboto uppercase font-light sm:text-2xl'>
-                <ul className='flex flex-col gap-4 sm:gap-8'>
+            <div className='py-4 sm:py-8 font-roboto uppercase font-light sm:text-2xl lg:text-lg'>
+                <ul className='flex flex-col lg:flex-row gap-4 sm:gap-8 lg:justify-evenly'>
                     <li>
                         <Link to='/'>Home</Link>
                     </li>
+                    <li className='hidden lg:block'>
+                        <p>|</p>
+                    </li>
                     <li>
                         <Link to='/inspirations'>Inspirations</Link>
+                    </li>
+                    <li className='hidden lg:block'>
+                        <p>|</p>
                     </li>
                     <li>
                         <Link to='/products'>Products</Link>
                     </li>
                 </ul>
             </div>
-            <div className='py-4 text-center font-roboto text-xs sm:text-lg'>
+            <div className='py-4 lg:pt-20 text-center font-roboto text-xs sm:text-lg lg:text-sm'>
                 <p>© 2024 NOBU. All rights reserved.</p>
             </div>
         </footer>

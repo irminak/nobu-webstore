@@ -81,10 +81,24 @@ const TopItems = () => {
     };
     return (
         <section className='bg-secondary w-screen  px-2 py-8 sm:py-12 overflow-hidden'>
-            <h2 className='px-4 pb-4 sm:pb-8 text-font font-futura text-2xl sm:text-[42px] uppercase font-normal '>
+            <h2 className='px-4 pb-4 sm:pb-8 text-font font-futura text-2xl sm:text-[42px] lg:text-3xl uppercase font-normal '>
                 Our Top Choices
             </h2>
-            <Slider {...settings}>
+            <div className='lg:hidden'>
+                <Slider {...settings}>
+                    {topItems.map((topItem) => (
+                        <ProductCard
+                            key={topItem.id}
+                            id={topItem.id}
+                            img={topItem.img}
+                            name={topItem.name}
+                            price={topItem.price}
+                            category={topItem.category}
+                        />
+                    ))}
+                </Slider>
+            </div>
+            <div className='hidden lg:grid grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 gap-y-8 '>
                 {topItems.map((topItem) => (
                     <ProductCard
                         key={topItem.id}
@@ -95,7 +109,7 @@ const TopItems = () => {
                         category={topItem.category}
                     />
                 ))}
-            </Slider>
+            </div>
         </section>
     );
 };

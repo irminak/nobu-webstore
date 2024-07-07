@@ -1,7 +1,7 @@
 // import { NavLink } from 'react-router-dom';
 import { FiMenu } from 'react-icons/fi';
 import { IoClose, IoCartOutline } from 'react-icons/io5';
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import DrawerMenu from './DrawerMenu';
 import { NavLink } from 'react-router-dom';
 import CartContext from '../store/CartContext';
@@ -13,6 +13,21 @@ const MainNavigation = () => {
     const toggleMenu = (state) => {
         setMenuIsActive(state);
     };
+
+    useEffect(() => {
+        const checkScreenSize = () => {
+            if (window.innerWidth > 1024) {
+                setMenuIsActive(true);
+            }
+        };
+
+        checkScreenSize();
+        window.addEventListener('resize', checkScreenSize);
+
+        return () => {
+            window.addEventListener('resize', checkScreenSize);
+        };
+    });
 
     return (
         <>
@@ -31,9 +46,9 @@ const MainNavigation = () => {
                         onClick={() => setMenuIsActive(!menuIsActive)}
                     >
                         {menuIsActive ? (
-                            <IoClose className='sm:text-5xl' />
+                            <IoClose className='sm:text-5xl lg:hidden' />
                         ) : (
-                            <FiMenu className='sm:text-5xl' />
+                            <FiMenu className='sm:text-5xl lg:hidden' />
                         )}
                     </div>
 
@@ -41,7 +56,7 @@ const MainNavigation = () => {
                         to='/cart'
                         className='cursor-pointer relative'
                     >
-                        <IoCartOutline className='sm:text-5xl' />
+                        <IoCartOutline className='sm:text-5xl lg:text-4xl text-font hover:text-contrast duration-300' />
                         {items.length !== 0 && items.length < 10 ? (
                             <div className=' bg-contrast w-[16px] sm:w-[20px] h-[16px] sm:h-[20px] absolute rounded-full -top-1 -right-1 flex items-center justify-center'>
                                 <p className='text-font font-roboto text-[10px] sm:text-[12px] leading-[18px] sm:leading-[20pxpx]'>
