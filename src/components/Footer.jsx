@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className='px-4 py-8 bg-primary text-silver'>
+        <footer className='px-4 lg:px-24 py-8 lg:pt-16 bg-primary text-silver'>
             <div className='py-4 text-center'>
                 <NavLink to='/'>
                     <h1 className='font-tan text-2xl sm:text-4xl'>NOBU</h1>

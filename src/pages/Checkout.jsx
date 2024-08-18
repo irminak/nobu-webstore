@@ -56,7 +56,7 @@ const CheckoutPage = () => {
                             >
                                 <ol
                                     role='list'
-                                    className=' flex max-w-2xl font-futura text-font text-base sm:text-2xl'
+                                    className=' flex max-w-2xl font-futura text-font text-base lg:text-lg'
                                 >
                                     <li className='flex'>
                                         <NavLink to='/'>Home</NavLink>
@@ -98,32 +98,34 @@ const CheckoutPage = () => {
                             </nav>
                         </div>
                     </div>
-                    <div className='px-4'>
-                        <section className='mb-4 py-6 sm:py-8 px-4 bg-silver rounded-lg font-roboto'>
-                            <h3 className=' text-xl sm:text-3xl font-medium'>
-                                Order summary
-                            </h3>
-                            <div className='py-4'>
-                                <div className='py-4 sm:py-6 flex justify-between border-b-2 border-secondary sm:text-2xl'>
-                                    <p>Subtotal</p>
-                                    <p>${cartTotal.toFixed(2)}</p>
+                    <div className='lg:flex lg:flex-row-reverse'>
+                        <div className='px-4 lg:grow'>
+                            <section className='mb-4 py-6 sm:py-8 px-4 bg-silver rounded-lg font-roboto'>
+                                <h3 className=' text-xl sm:text-3xl lg:text-xl font-medium'>
+                                    Order summary
+                                </h3>
+                                <div className='py-4'>
+                                    <div className='py-4 sm:py-6 flex justify-between border-b-2 border-secondary sm:text-2xl lg:text-lg'>
+                                        <p>Subtotal</p>
+                                        <p>${cartTotal.toFixed(2)}</p>
+                                    </div>
+                                    <div className='py-4 sm:py-6 flex justify-between border-b-2 border-secondary sm:text-2xl lg:text-lg'>
+                                        <p>Shipping</p>
+                                        <p>${shippingPrice}.00</p>
+                                    </div>
+                                    <div className='pt-6 sm:pt-8 flex justify-between text-lg font-medium sm:text-2xl lg:text-lg'>
+                                        <p>Order total</p>
+                                        <p>${totalWithShipping}</p>
+                                    </div>
                                 </div>
-                                <div className='py-4 sm:py-6 flex justify-between border-b-2 border-secondary sm:text-2xl'>
-                                    <p>Shipping</p>
-                                    <p>${shippingPrice}.00</p>
-                                </div>
-                                <div className='pt-6 sm:pt-8 flex justify-between text-lg font-medium sm:text-2xl'>
-                                    <p>Order total</p>
-                                    <p>${totalWithShipping}</p>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div className='px-4 py-4'>
-                        <Form
-                            thanksMessage={thanksMessage}
-                            setThanksMessage={setThanksMessage}
-                        />
+                            </section>
+                        </div>
+                        <div className='px-4 py-4 lg:basis-4/6'>
+                            <Form
+                                thanksMessage={thanksMessage}
+                                setThanksMessage={setThanksMessage}
+                            />
+                        </div>
                     </div>
                 </>
             )}

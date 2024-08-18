@@ -5,8 +5,8 @@ const Badge = ({ category }) => {
     return (
         <>
             <Link to={`/products/category/${category}`}>
-                <div className='px-6 sm:px-8 py-2 sm:py-4 rounded-md bg-secondary text-font'>
-                    <p className='font-roboto text-sm sm:text-2xl'>
+                <div className='px-6 sm:px-8 lg:px-6 py-2 sm:py-4 lg:py-2 rounded-md bg-secondary text-font'>
+                    <p className='font-roboto text-sm sm:text-2xl lg:text-sm'>
                         {category}
                     </p>
                 </div>

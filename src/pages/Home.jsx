@@ -23,11 +23,11 @@ const HomePage = () => {
                     to='/products'
                     className='group p-4 sm:pt-6 flex sm:flex-col flex-grow flex-wrap items-end lg:items-start lg:justify-center sm:items-start bg-contrast  rounded-xl relative overflow-hidden'
                 >
-                    <FaArrowRight className='hidden lg:block absolute text-5xl text-silver top-1/2 -translate-y-1/2 -translate-x-16 group-hover:-translate-x-4 xl:group-hover:translate-x-2 duration-300 ease-in' />
-                    <h2 className='sm:mb-4 lg:pb-4 lg:mb-0 text-4xl sm:text-6xl lg:text-4xl font-medium text-silver font-futura uppercase cursor-pointer lg:border-b-2 lg:group-hover:translate-x-10 xl:group-hover:translate-x-20 duration-300 ease-in'>
+                    <FaArrowRight className='hidden lg:block absolute text-5xl text-silver top-1/2 -translate-y-1/2 -translate-x-16 lg:-translate-x-20 group-hover:-translate-x-4 xl:group-hover:translate-x-2 duration-300 ease-in' />
+                    <h2 className='sm:mb-4 lg:pb-4 lg:mb-0 text-4xl sm:text-6xl lg:text-4xl font-medium text-silver font-futura uppercase cursor-pointer lg:border-b-2 lg:group-hover:translate-x-12 xl:group-hover:translate-x-20 duration-300 ease-in'>
                         Go Shopping
                     </h2>
-                    <p className='py-2 sm:py-4 border-t-2 lg:border-none text-silver sm:text-3xl lg:text-xl sm:font-light lg:group-hover:translate-x-10 xl:group-hover:translate-x-20 duration-300 ease-in'>
+                    <p className='py-2 sm:py-4 border-t-2 lg:border-none text-silver sm:text-3xl lg:text-xl sm:font-light lg:group-hover:translate-x-12 xl:group-hover:translate-x-20 duration-300 ease-in'>
                         Create your space
                     </p>
                 </NavLink>

@@ -8,7 +8,7 @@ const CategoryPage = () => {
     const categoryItems = items.filter((item) => item.category === category);
 
     return (
-        <div className='pt-[70px] sm:pt-[90px]'>
+        <div className='pt-[70px] sm:pt-[90px] lg:pt-[76px]'>
             <div className='p-4'>
                 <InspirationCard
                     shape='h-[160px] sm:h-[260px]'
@@ -17,7 +17,7 @@ const CategoryPage = () => {
                     position='items-end'
                     category={category}
                 />
-                <div className='pt-8 sm:pt-12 grid grid-cols-2 gap-x-2 gap-y-6'>
+                <div className='pt-8 py-4 sm:pt-12 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-2 lg:gap-x-4 gap-y-6 lg:gap-y-10'>
                     {categoryItems.map((item) => (
                         <ProductCard
                             id={item.id}

@@ -36,14 +36,14 @@ const ProductDetailPage = () => {
 
     return (
         <div className='pt-[90px] reative'>
-            <div className='px-4'>
+            <div className='px-4 '>
                 <nav
                     aria-label='Breadcrumb'
                     className='py-4 sm:pb-8'
                 >
                     <ol
                         role='list'
-                        className=' flex max-w-2xl font-futura text-font text-base sm:text-2xl'
+                        className=' flex max-w-2xl font-futura text-font text-base sm:text-2xl lg:text-lg'
                     >
                         <li className='flex'>
                             <NavLink to='/products'>Products</NavLink>
@@ -80,7 +80,7 @@ const ProductDetailPage = () => {
                             <NavLink
                                 to={`/products/category/${product.category}/product/${product.id}`}
                                 aria-current='page'
-                                className='text-[#ADADAD] hover:text-font'
+                                className='text-[#ADADAD] hover:text-font '
                             >
                                 {capitalizeFirstLetter(product.name)}
                             </NavLink>
@@ -88,22 +88,22 @@ const ProductDetailPage = () => {
                     </ol>
                 </nav>
 
-                <div className='flex flex-col'>
-                    <div className='rounded-lg overflow-hidden'>
+                <div className='flex flex-col lg:flex-row lg:justify-between '>
+                    <div className='rounded-lg overflow-hidden lg:flex-grow '>
                         <img
                             className='w-full'
                             src={product.img}
                             alt=''
                         />
                     </div>
-                    <div className='flex flex-col gap-4 font-futura text-font'>
-                        <div className='pt-8'>
-                            <h2 className='text-2xl sm:text-4xl font-medium'>
+                    <div className='flex flex-col gap-4 font-futura text-font lg:flex-grow lg:pl-8'>
+                        <div className='pt-8 lg:pt-0'>
+                            <h2 className='text-2xl sm:text-4xl lg:text-3xl font-medium'>
                                 {product.name}
                             </h2>
                         </div>
                         <div>
-                            <p className='text-2xl sm:text-4xl'>
+                            <p className='text-2xl sm:text-4xl lg:text-3xl '>
                                 $ {product.price}
                             </p>
                         </div>
@@ -113,7 +113,7 @@ const ProductDetailPage = () => {
                                 totalCount={product.totalCount}
                             />
                         </div>
-                        <div className=' flex flex-col gap-2 sm:text-2xl'>
+                        <div className=' flex flex-col gap-2 sm:text-2xl lg:text-lg '>
                             <p>
                                 Size:{' '}
                                 <span className='font-medium'>
@@ -134,7 +134,7 @@ const ProductDetailPage = () => {
                             </p>
                         </div>
 
-                        <div>
+                        <div className='lg:flex lg:grow lg:items-start lg:mt-8'>
                             <Button
                                 onClick={handleAddPlanToCart}
                                 text='Add to cart'
@@ -143,13 +143,15 @@ const ProductDetailPage = () => {
                     </div>
                 </div>
 
-                <div className=' py-8 flex flex-col font-roboto text-font gap-4'>
-                    <p className='sm:pb-4 text-lg sm:text-2xl'>
+                <div className=' py-8 flex flex-col font-roboto text-font gap-4 lg:my-8'>
+                    <p className='sm:pb-4 text-lg sm:text-2xl lg:text-lg'>
                         {product.description}
                     </p>
                     <div>
-                        <h3 className='font-medium sm:text-2xl'>Highlights</h3>
-                        <ul className='sm:ml-2 list-disc pl-4 py-2 sm:text-2xl'>
+                        <h3 className='font-medium sm:text-2xl lg:text-lg'>
+                            Highlights
+                        </h3>
+                        <ul className='sm:ml-2 list-disc pl-4 py-2 sm:text-2xl lg:text-lg'>
                             {product.highlights.map((highlight) => (
                                 <li key={highlight}>{highlight}</li>
                             ))}
