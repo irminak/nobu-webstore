@@ -31,11 +31,11 @@ const CheckoutPage = () => {
                 <div className='my-4 px-4'>
                     <div className='px-4'>
                         <section className='mb-4 py-6 sm:py-12 px-4 bg-silver rounded-lg font-futura text-font'>
-                            <h3 className=' text-xl sm:text-2xl text-center'>
+                            <h3 className=' text-xl sm:text-2xl lg:text-xl text-center'>
                                 Thank you for your order. <br />
                                 We are working on it.
                             </h3>
-                            <div className='mt-6'>
+                            <div className='mt-6 lg:mt-10'>
                                 <Link to='/'>
                                     <Button
                                         text='Go back shopping'
@@ -120,7 +120,7 @@ const CheckoutPage = () => {
                                 </div>
                             </section>
                         </div>
-                        <div className='px-4 py-4 lg:basis-4/6'>
+                        <div className='px-4 py-4 lg:basis-1/2'>
                             <Form
                                 thanksMessage={thanksMessage}
                                 setThanksMessage={setThanksMessage}
