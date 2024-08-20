@@ -80,7 +80,7 @@ const TopItems = () => {
         ],
     };
     return (
-        <section className='bg-secondary w-screen  px-2 py-8 sm:py-12 overflow-hidden'>
+        <section className='bg-secondary w-full  px-2 py-8 sm:py-12 overflow-hidden'>
             <h2 className='px-4 pb-4 sm:pb-8 text-font font-futura text-2xl sm:text-[42px] lg:text-3xl uppercase font-normal '>
                 Our Top Choices
             </h2>

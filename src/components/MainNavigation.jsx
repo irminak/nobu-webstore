@@ -54,7 +54,7 @@ const MainNavigation = () => {
 
                     <NavLink
                         to='/cart'
-                        className='cursor-pointer relative'
+                        className='cursor-pointer relative '
                     >
                         <IoCartOutline className='sm:text-5xl lg:text-4xl text-font hover:text-contrast duration-300' />
                         {items.length !== 0 && items.length < 10 ? (

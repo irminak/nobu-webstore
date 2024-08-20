@@ -29,7 +29,7 @@ const CheckoutPage = () => {
         <div className='pt-[70px] sm:pt-[90px] reative flex flex-col'>
             {thanksMessage ? (
                 <div className='my-4 px-4'>
-                    <div className='px-4'>
+                    <div className='mx-auto px-4 max-w-[1000px]'>
                         <section className='mb-4 py-6 sm:py-12 px-4 bg-silver rounded-lg font-futura text-font'>
                             <h3 className=' text-xl sm:text-2xl lg:text-xl text-center'>
                                 Thank you for your order. <br />

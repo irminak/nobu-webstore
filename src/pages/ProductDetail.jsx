@@ -89,7 +89,7 @@ const ProductDetailPage = () => {
                 </nav>
 
                 <div className='flex flex-col lg:flex-row lg:justify-between '>
-                    <div className='rounded-lg overflow-hidden lg:flex-grow '>
+                    <div className='rounded-lg overflow-hidden lg:flex-grow max-w-[500px]'>
                         <img
                             className='w-full'
                             src={product.img}
@@ -134,7 +134,7 @@ const ProductDetailPage = () => {
                             </p>
                         </div>
 
-                        <div className='lg:flex lg:grow lg:items-start lg:mt-8'>
+                        <div className='max-w-[500px] lg:flex lg:grow lg:items-start lg:mt-8'>
                             <Button
                                 onClick={handleAddPlanToCart}
                                 text='Add to cart'

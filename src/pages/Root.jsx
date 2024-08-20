@@ -6,7 +6,7 @@ const RootLayout = () => {
     return (
         <>
             <MainNavigation />
-            <main>
+            <main className='max-w-[1536px] my-0 mx-auto'>
                 <ScrollRestoration />
                 <Outlet />
             </main>
