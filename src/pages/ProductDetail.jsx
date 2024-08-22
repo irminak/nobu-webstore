@@ -36,7 +36,7 @@ const ProductDetailPage = () => {
 
     return (
         <div className='pt-[90px] reative'>
-            <div className='px-4 '>
+            <div className='max-w-[1536px] mx-auto px-4 '>
                 <nav
                     aria-label='Breadcrumb'
                     className='py-4 sm:pb-8'
@@ -121,15 +121,28 @@ const ProductDetailPage = () => {
                                 </span>
                             </p>
                             <p>
-                                Color:{' '}
+                                {' '}
+                                {product.category === 'candles'
+                                    ? 'Scent: '
+                                    : product.category === 'cosmetics'
+                                    ? 'Ingredients: '
+                                    : 'Color: '}
                                 <span className='font-medium'>
-                                    {product.color}
+                                    {product.category === 'candles'
+                                        ? product.scent
+                                        : product.category === 'cosmetics'
+                                        ? product.ingredients
+                                        : product.color}
                                 </span>
                             </p>
                             <p>
-                                Material:{' '}
+                                {product.category === 'cosmetics'
+                                    ? 'Instruction: '
+                                    : 'Material: '}
                                 <span className='font-medium'>
-                                    {product.material}
+                                    {product.category === 'cosmetics'
+                                        ? product.instructions
+                                        : product.material}
                                 </span>
                             </p>
                         </div>

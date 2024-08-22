@@ -28,7 +28,7 @@ const CartPage = () => {
     const totalWithShipping = (cartTotal + shippingPrice).toFixed(2);
     return (
         <>
-            <div className='pt-[70px] sm:pt-[90px] px-4 text-font'>
+            <div className='max-w-[1536px] mx-auto pt-[70px] sm:pt-[90px] px-4 text-font'>
                 <div>
                     <h2 className='py-4 sm:pl-4 font-roboto text-2xl sm:text-4xl lg:text-3xl font-medium'>
                         Shopping Cart

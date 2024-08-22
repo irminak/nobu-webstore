@@ -5,7 +5,7 @@ import { items, categories } from '../data/products';
 const ProductsPage = () => {
     return (
         <>
-            <div className='pt-[70px] sm:pt-[90px] lg:pt-[70px]'>
+            <div className='max-w-[1536px] mx-auto pt-[70px] sm:pt-[90px] lg:pt-[70px]'>
                 <div className='p-4'>
                     <div className='p-4 sm:py-6 flex flex-wrap justify-between sm:justify-center gap-4 sm:gap-8'>
                         {categories.map((category) => (

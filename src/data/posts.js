@@ -18,7 +18,7 @@ export const posts = [
         author: 'Kris Martin',
         aphoto: '/public/agent1.jpg',
         date: '8/20/2024, 16:30',
-        img: 'https://images.lifestyleasia.com/wp-content/uploads/2018/03/22191220/iStock-504482978.jpg?tr=w-1600',
+        img: 'https://indiegetup.com/wp-content/uploads/2023/07/10-Eco-Friendly-Sustainable-Candles-For-A-Clean-Burn.png',
     },
     {
         id: 2,

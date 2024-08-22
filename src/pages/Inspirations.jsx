@@ -4,22 +4,22 @@ import Badge from '../components/UI/Badge';
 
 const InspirationsPage = () => {
     return (
-        <div className='pt-[70px] sm:pt-[90px] '>
-            <section className='p-4 mb-8'>
+        <div className='max-w-[1536px] mx-auto pt-[70px] sm:pt-[90px] '>
+            <section className='p-4 mb-8 max-w-[840px]  mx-auto'>
                 <div className='pb-6 font-futura border-b-2 border-silver'>
-                    <h2 className='text-font text-3xl font-medium'>
+                    <h2 className='text-font text-4xl font-medium'>
                         Inspirations
                     </h2>
-                    <p className='py-2 text-[#555] text-lg'>
+                    <p className='py-2 text-[#555] text-xl'>
                         Let yourself find some pleasure with{' '}
                         <span className='font-semibold'>our</span> help
                     </p>
                 </div>
                 <div className='my-12'>
                     {posts.map((post) => (
-                        <article className='mb-20'>
+                        <article className='group mb-20'>
                             <Link to={`/inspirations/${post.id}`}>
-                                <div>
+                                <div className='max-w-[800px]'>
                                     <img
                                         src={post.img}
                                         className='rounded-2xl'
@@ -29,7 +29,7 @@ const InspirationsPage = () => {
                             <div className='py-10 inline-block'>
                                 <Badge category={post.category} />
                             </div>
-                            <div className='text-justify text-font border-b-2 border-silver'>
+                            <div className='text-justify text-font border-b-2 border-silver group-hover:text-[#777] duration-300'>
                                 <Link to={`/inspirations/${post.id}`}>
                                     <h2 className='font-tan text-xl leading-8'>
                                         {post.title}

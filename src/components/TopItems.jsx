@@ -25,11 +25,11 @@ const TopItems = () => {
             selectedItems = filteredItems;
         }
         setTopItems(selectedItems);
+    };
 
-        const getRandomItems = (array, n) => {
-            const shuffled = array.sort(() => 0.5 - Math.random());
-            return shuffled.slice(0, n);
-        };
+    const getRandomItems = (array, n) => {
+        const shuffled = array.sort(() => 0.5 - Math.random());
+        return shuffled.slice(0, n);
     };
 
     var settings = {
@@ -80,12 +80,26 @@ const TopItems = () => {
         ],
     };
     return (
-        <section className='bg-secondary w-full  px-2 py-8 sm:py-12 overflow-hidden'>
-            <h2 className='px-4 pb-4 sm:pb-8 text-font font-futura text-2xl sm:text-[42px] lg:text-3xl uppercase font-normal '>
-                Our Top Choices
-            </h2>
-            <div className='lg:hidden'>
-                <Slider {...settings}>
+        <section className='bg-secondary   px-2 py-8 sm:py-12 overflow-hidden'>
+            <div className='max-w-[1536px] mx-auto'>
+                <h2 className='px-4 pb-4 sm:pb-8 text-font font-futura text-2xl sm:text-[42px] lg:text-3xl uppercase font-normal '>
+                    Our Top Choices
+                </h2>
+                <div className='lg:hidden'>
+                    <Slider {...settings}>
+                        {topItems.map((topItem) => (
+                            <ProductCard
+                                key={topItem.id}
+                                id={topItem.id}
+                                img={topItem.img}
+                                name={topItem.name}
+                                price={topItem.price}
+                                category={topItem.category}
+                            />
+                        ))}
+                    </Slider>
+                </div>
+                <div className='hidden lg:grid grid-cols-3 xl:grid-cols-4 gap-4 gap-y-8 '>
                     {topItems.map((topItem) => (
                         <ProductCard
                             key={topItem.id}
@@ -96,19 +110,7 @@ const TopItems = () => {
                             category={topItem.category}
                         />
                     ))}
-                </Slider>
-            </div>
-            <div className='hidden lg:grid grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 gap-y-8 '>
-                {topItems.map((topItem) => (
-                    <ProductCard
-                        key={topItem.id}
-                        id={topItem.id}
-                        img={topItem.img}
-                        name={topItem.name}
-                        price={topItem.price}
-                        category={topItem.category}
-                    />
-                ))}
+                </div>
             </div>
         </section>
     );

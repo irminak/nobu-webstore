@@ -7,7 +7,7 @@ const BlogPage = () => {
     const post = posts.find((post) => post.id === parseInt(postId, 10));
 
     return (
-        <div className='flex justify-center pt-[70px] sm:pt-[90px] mb-8 sm:px-4'>
+        <div className='max-w-[1536px] mx-auto flex justify-center pt-[70px] sm:pt-[90px] mb-8 sm:px-4'>
             <div className='max-w-[840px] px-4 text-font text-justify'>
                 <p className='font-roboto text-contrast text-base'>
                     {post.category}

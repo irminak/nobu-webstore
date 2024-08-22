@@ -6,7 +6,7 @@ import { FaArrowRight } from 'react-icons/fa';
 const HomePage = () => {
     return (
         <div className='pt-[70px] sm:pt-[90px] '>
-            <section className='p-4 lg:py-0 flex flex-col lg:flex-row flex-wrap gap-4 '>
+            <section className='max-w-[1536px] mx-auto p-4 lg:py-0 flex flex-col lg:flex-row flex-wrap gap-4 '>
                 <NavLink
                     to='/inspirations'
                     className='group w-full lg:w-2/3 cursor-pointer'
@@ -35,7 +35,7 @@ const HomePage = () => {
             <div className='my-4 lg:my-12'>
                 <TopItems />
             </div>
-            <section className='px-4 py-8 flex flex-wrap gap-6'>
+            <section className='max-w-[1536px] mx-auto px-4 py-8 flex flex-wrap gap-6'>
                 <InspirationCard
                     width='lg:w-auto'
                     shape='aspect-square lg:h-[400px]'
