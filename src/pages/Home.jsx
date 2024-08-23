@@ -6,13 +6,13 @@ import { FaArrowRight } from 'react-icons/fa';
 const HomePage = () => {
     return (
         <div className='pt-[70px] sm:pt-[90px] '>
-            <section className='max-w-[1536px] mx-auto p-4 lg:py-0 flex flex-col lg:flex-row flex-wrap gap-4 '>
+            <section className='max-w-[1800px] mx-auto p-4 lg:py-0 flex flex-col lg:flex-row flex-wrap gap-4 '>
                 <NavLink
                     to='/inspirations'
                     className='group w-full lg:w-2/3 cursor-pointer'
                 >
-                    <div className='h-[400px] sm:h-[500px] bg-plants bg-no-repeat bg-center bg-cover rounded-xl'>
-                        <div className='p-4 h-[400px] sm:h-[500px] w-full flex items-end rounded-xl bg-[#2e2e2e30] group-hover:bg-[#2e2e2e00] duration-300'>
+                    <div className='h-[400px] sm:h-[500px] lg:h-[600px] bg-plants bg-no-repeat bg-center bg-cover rounded-xl'>
+                        <div className='p-4 h-[400px] sm:h-[500px] lg:h-[600px] w-full flex items-end rounded-xl bg-[#2e2e2e60] group-hover:bg-[#2e2e2e40] duration-300'>
                             <h2 className='text-4xl sm:text-6xl lg:text-5xl font-medium text-silver font-futura uppercase lg:group-hover:translate-x-10 duration-300 ease-in'>
                                 Get Inspired
                             </h2>

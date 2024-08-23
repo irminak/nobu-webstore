@@ -20,7 +20,7 @@ export default {
         },
         extend: {
             backgroundImage: {
-                plants: "url('https://i.ibb.co/J5hMCyh/plants.jpg')",
+                plants: "url('https://cdn-bnokp.nitrocdn.com/QNoeDwCprhACHQcnEmHgXDhDpbEOlRHH/assets/images/optimized/rev-21d3e9d/www.decorilla.com/online-decorating/wp-content/uploads/2022/05/Boho-home-decor-AD-2048x1365.jpeg')",
             },
         },
     },

@@ -4,7 +4,7 @@ import Badge from '../components/UI/Badge';
 
 const InspirationsPage = () => {
     return (
-        <div className='max-w-[1536px] mx-auto pt-[70px] sm:pt-[90px] '>
+        <div className='max-w-[1800px] mx-auto pt-[70px] sm:pt-[90px] '>
             <section className='p-4 mb-8 max-w-[840px]  mx-auto'>
                 <div className='pb-6 font-futura border-b-2 border-silver'>
                     <h2 className='text-font text-4xl font-medium'>

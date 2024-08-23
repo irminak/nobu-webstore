@@ -99,7 +99,7 @@ const TopItems = () => {
                         ))}
                     </Slider>
                 </div>
-                <div className='hidden lg:grid grid-cols-3 xl:grid-cols-4 gap-4 gap-y-8 '>
+                <div className='hidden lg:grid grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-20 gap-y-8 '>
                     {topItems.map((topItem) => (
                         <ProductCard
                             key={topItem.id}

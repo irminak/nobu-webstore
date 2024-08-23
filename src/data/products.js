@@ -13,7 +13,7 @@ export const items = [
         material: 'Paraffin Wax',
         instructions:
             'Place on a heat-resistant surface. Keep away from drafts and flammable objects.',
-        img: 'https://i.imgur.com/MRRIvFn.png',
+        img: 'https://i.postimg.cc/wTxLhBFC/temp-Image-B9oxfl.avif',
         rate: 4,
         totalCount: 76,
         highlights: [
@@ -36,7 +36,7 @@ export const items = [
         material: 'Soy Wax',
         instructions:
             'Burn on a stable, heat-resistant surface. Trim wick to 1/4 inch before each lighting.',
-        img: 'https://i.postimg.cc/tRmQBNsz/temp-Image-OIk3ld.avif',
+        img: 'https://i.postimg.cc/hjFVxb3s/temp-Image-KKKBDX.avif',
         rate: 4,
         totalCount: 98,
         highlights: [
@@ -59,7 +59,7 @@ export const items = [
         material: 'Soy Wax',
         instructions:
             'Burn on a stable, heat-resistant surface. Trim wick to 1/4 inch before each lighting.',
-        img: 'https://i.postimg.cc/CL3ygMHB/temp-Imagey9-Xe1-H.avif',
+        img: 'https://i.postimg.cc/ryN504GG/temp-Image-SPgoit.avif',
         rate: 5,
         totalCount: 112,
         highlights: [
@@ -82,7 +82,7 @@ export const items = [
         material: 'Soy Wax',
         instructions:
             'Burn on a stable, heat-resistant surface. Trim wick to 1/4 inch before each lighting.',
-        img: 'https://i.postimg.cc/FKtJ3Sbr/temp-Imagek-ZXTi-I.avif',
+        img: 'https://i.postimg.cc/3NYpfrhD/temp-Imagec-Bs-Akd.avif',
         rate: 5,
         totalCount: 89,
         highlights: [
@@ -105,7 +105,7 @@ export const items = [
         material: 'Beeswax',
         instructions:
             'Burn on a stable, heat-resistant surface. Trim wick to 1/4 inch before each lighting.',
-        img: 'https://i.postimg.cc/TPxZKksT/temp-Imagev-OHo-LX.avif',
+        img: 'https://i.postimg.cc/L675n4WB/temp-Image-Pt-Q7-Up.avif',
         rate: 5,
         totalCount: 76,
         highlights: [
@@ -128,7 +128,7 @@ export const items = [
         material: 'Soy Wax',
         instructions:
             'Burn on a stable, heat-resistant surface. Trim wick to 1/4 inch before each lighting.',
-        img: 'https://i.postimg.cc/FKxw3yt3/temp-Image-MRs-O0u.avif',
+        img: 'https://i.postimg.cc/7h9zFvPt/temp-Image-Q8-PTGQ.avif',
         rate: 3,
         totalCount: 104,
         highlights: [
@@ -245,7 +245,7 @@ export const items = [
         material: 'Faux Leather Upholstery and Wooden Legs',
         instructions:
             'Minimal assembly required. Wipe clean with a damp cloth.',
-        img: 'https://i.postimg.cc/hPfJYsp4/temp-Imagele-XFmb.avif',
+        img: 'https://i.postimg.cc/NMnHk8ML/Zrzut-ekranu-2024-08-23-o-11-12-13.png',
         rate: 4,
         totalCount: 74,
         highlights: [
@@ -268,7 +268,7 @@ export const items = [
         material: 'Faux Leather Upholstery and Wooden Frame',
         instructions:
             'Minimal assembly required. Clean with a damp cloth as needed.',
-        img: 'https://i.postimg.cc/T1hPZ2jN/temp-Image8bsd-JF.avif',
+        img: 'https://i.postimg.cc/d3TTH7k6/Zrzut-ekranu-2024-08-23-o-11-17-37.png',
         rate: 5,
         totalCount: 89,
         highlights: [
@@ -291,7 +291,7 @@ export const items = [
             'A classic high wooden bar chair with a timeless design. This chair combines both durability and style, featuring a sturdy wooden frame with a natural finish. The tall backrest and footrest provide comfort, making it an ideal seating option for kitchen islands, bars, or high countertops.',
         material: 'Solid Wood',
         instructions: 'No assembly required. Wipe clean with a dry cloth.',
-        img: 'https://i.postimg.cc/X7mZ65zf/temp-Image-Dg-ZDkf.avif',
+        img: 'https://i.postimg.cc/dDPZzqGY/Zrzut-ekranu-2024-08-23-o-11-23-57.png',
         rate: 4,
         totalCount: 112,
         highlights: [
@@ -314,7 +314,7 @@ export const items = [
             'A versatile and elegant wooden dining chair, perfect for both traditional and contemporary settings. Crafted from high-quality wood, this chair features a comfortable backrest and a sturdy frame, ensuring both style and durability. Its natural wood finish complements a variety of interior decors.',
         material: 'Solid Wood',
         instructions: 'Minimal assembly required. Wipe clean with a dry cloth.',
-        img: 'https://i.postimg.cc/YCFvrS5J/temp-Image9-KMjc-D.avif',
+        img: 'https://i.postimg.cc/G3B7wqv7/Zrzut-ekranu-2024-08-23-o-11-20-07.png',
         rate: 5,
         totalCount: 95,
         highlights: [
@@ -337,7 +337,7 @@ export const items = [
         material: 'Faux Leather Upholstery and Wooden Base',
         instructions:
             'Minimal assembly required. Wipe clean with a damp cloth.',
-        img: 'https://i.postimg.cc/VvTN1yDf/temp-Image-ACFOMR.avif',
+        img: 'https://i.postimg.cc/v8pPQfzQ/Zrzut-ekranu-2024-08-23-o-11-25-58.png',
         rate: 3,
         totalCount: 83,
         highlights: [

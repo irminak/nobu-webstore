@@ -26,7 +26,7 @@ const CheckoutPage = () => {
 
     const totalWithShipping = (cartTotal + shippingPrice).toFixed(2);
     return (
-        <div className='max-w-[1536px] mx-auto pt-[70px] sm:pt-[90px] reative flex flex-col'>
+        <div className='max-w-[1536px]  mx-auto pt-[70px] sm:pt-[90px] reative flex flex-col'>
             {thanksMessage ? (
                 <div className='my-4 px-4'>
                     <div className='mx-auto px-4 max-w-[1000px]'>
