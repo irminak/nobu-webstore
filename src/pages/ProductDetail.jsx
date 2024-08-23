@@ -43,7 +43,7 @@ const ProductDetailPage = () => {
                 >
                     <ol
                         role='list'
-                        className=' flex max-w-2xl font-futura text-font text-base sm:text-2xl lg:text-lg'
+                        className='flex flex-wrap max-w-2xl font-futura text-font text-base sm:text-2xl lg:text-lg'
                     >
                         <li className='flex'>
                             <NavLink to='/products'>Products</NavLink>
@@ -176,7 +176,7 @@ const ProductDetailPage = () => {
             <div className='pb-8 bg-secondary'>
                 <TopItems />
             </div>
-            <div className='fixed z-10 top-[70px] sm:top-[90px] right-0'>
+            <div className='fixed z-10 top-[70px] sm:top-[90px] left-0'>
                 <Alert
                     show={showAlert}
                     name={product.name}

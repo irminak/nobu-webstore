@@ -627,7 +627,7 @@ export const items = [
     {
         id: 28,
         category: 'lamps',
-        name: 'Futuristic Desk Lamp with Green Lampshade and Orange Shaft',
+        name: 'Futuristic Desk Lamp',
         color: 'Green Shade, Orange Shaft',
         size: '20 inches tall',
         price: 59.99,

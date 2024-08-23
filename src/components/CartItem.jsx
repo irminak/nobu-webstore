@@ -17,7 +17,7 @@ const CartItem = ({
         <div className='border-t-2 border-silver py-6 flex items-start lg:mr-12'>
             <div>
                 <img
-                    className='h-[120px] sm:h-[240px] border-2 rounded-lg border-silver'
+                    className='h-[120px] w-[120px] sm:h-[240px] sm:w-[240px] border-2 rounded-lg border-silver'
                     src={img}
                     alt=''
                 />
