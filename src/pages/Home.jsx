@@ -5,7 +5,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const HomePage = () => {
     return (
-        <div className='pt-[70px] sm:pt-[90px] '>
+        <div className='pt-[70px] sm:pt-[90px]'>
             <section className='max-w-[1800px] mx-auto p-4 lg:py-0 flex flex-col lg:flex-row flex-wrap gap-4 '>
                 <NavLink
                     to='/inspirations'

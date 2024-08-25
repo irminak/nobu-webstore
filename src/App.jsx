@@ -13,26 +13,32 @@ import CategoryPage from './pages/Category.jsx';
 import CheckoutPage from './pages/Checkout.jsx';
 import BlogPage from './pages/Blog.jsx';
 
-const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <RootLayout />,
-        errorElement: <ErrorPage />,
-        children: [
-            { path: '/', element: <HomePage /> },
-            { path: '/products', element: <ProductsPage /> },
-            { path: '/products/category/:category', element: <CategoryPage /> },
-            {
-                path: '/products/category/:category/product/:productId',
-                element: <ProductDetailPage />,
-            },
-            { path: '/inspirations', element: <InspirationsPage /> },
-            { path: '/inspirations/:postId', element: <BlogPage /> },
-            { path: '/cart', element: <CartPage /> },
-            { path: '/checkout', element: <CheckoutPage /> },
-        ],
-    },
-]);
+const router = createBrowserRouter(
+    [
+        {
+            path: '/',
+            element: <RootLayout />,
+            errorElement: <ErrorPage />,
+            children: [
+                { path: '/', element: <HomePage /> },
+                { path: '/products', element: <ProductsPage /> },
+                {
+                    path: '/products/category/:category',
+                    element: <CategoryPage />,
+                },
+                {
+                    path: '/products/category/:category/product/:productId',
+                    element: <ProductDetailPage />,
+                },
+                { path: '/inspirations', element: <InspirationsPage /> },
+                { path: '/inspirations/:postId', element: <BlogPage /> },
+                { path: '/cart', element: <CartPage /> },
+                { path: '/checkout', element: <CheckoutPage /> },
+            ],
+        },
+    ],
+    { basename: import.meta.env.DEV ? '/' : '/nobu-webstore/' }
+);
 
 function App() {
     return (
