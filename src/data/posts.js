@@ -1,3 +1,8 @@
+import person1 from '../../public/agent1.jpg';
+import person2 from '../../public/agent2.jpg';
+import person3 from '../../public/agent4.jpg';
+import person4 from '../../public/agent5.jpg';
+
 export const posts = [
     {
         id: 1,
@@ -16,7 +21,7 @@ export const posts = [
             'In conclusion, the future of candles is not just about fragrance or décor; its about sustainability, wellness, and conscious living. By choosing eco-friendly candles, consumers can enjoy the benefits of a beautiful, aromatic experience while also contributing to a healthier planet.',
         ],
         author: 'Kris Martin',
-        aphoto: '/agent1.jpg',
+        aphoto: person1,
         date: '8/20/2024, 16:30',
         img: 'https://indiegetup.com/wp-content/uploads/2023/07/10-Eco-Friendly-Sustainable-Candles-For-A-Clean-Burn.png',
     },
@@ -37,7 +42,7 @@ export const posts = [
             'In conclusion, sustainable furniture is not just a passing trend; it represents a fundamental shift in how we think about our living spaces and our impact on the planet. As more consumers prioritize sustainability, the furniture industry is set to continue evolving towards more eco-friendly, ethical, and innovative solutions.',
         ],
         author: 'Katy Wung',
-        aphoto: '/agent2.jpg',
+        aphoto: person2,
         date: '8/16/2024, 17:30',
         img: 'https://www.ecocertify.org/images/sustainable-furniture-and-home-decor.jpg',
     },
@@ -58,7 +63,7 @@ export const posts = [
             'In conclusion, clean beauty represents a significant shift in the cosmetics industry towards healthier, safer, and more sustainable products. As consumers become more educated and conscious of their choices, the demand for clean beauty is set to continue growing, paving the way for a brighter, more responsible future in skincare and makeup.',
         ],
         author: 'Melissa Pillow',
-        aphoto: '/agent4.jpg',
+        aphoto: person3,
         date: '6/16/2024, 06:45',
         img: 'https://www.shape.com/thmb/F8JZ-UnMXWCaHlNLLRM0Y5_Ie5I=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/clean-beauty-GettyImages-1147783961-2000-33504b697cc341d78162713bea2e7aab.jpeg',
     },
@@ -79,7 +84,7 @@ export const posts = [
             'In conclusion, the world of lamps is evolving rapidly, with trends that reflect a combination of technological advancements, sustainable practices, and diverse design aesthetics. Whether youre looking for smart lighting solutions, eco-friendly options, or bold statement pieces, theres a modern lamp to suit every style and need.',
         ],
         author: 'John Merc',
-        aphoto: '/agent5.jpg',
+        aphoto: person4,
         date: '4/19/2024, 08:45',
         img: 'https://www.home-designing.com/wp-content/uploads/2020/10/monochrome-rug.jpg',
     },
